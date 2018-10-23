@@ -22,61 +22,24 @@ var botonc=document.getElementById("id_botonc");
 var botonb=document.getElementById("id_botonb");
 var botonres=document.getElementById("id_botonres");
 
-botonx.onclick=function(e){
-    display(".");
-}
-boton0.onclick=function(e){
-    display(0);
-}
-boton1.onclick=function(e){
-    display(1);
-}
-boton2.onclick=function(e){
-    display(2);
-}
-boton3.onclick=function(e){
-    display(3);
-}
-boton4.onclick=function(e){
-    display(4);
-}
-boton5.onclick=function(e){
-    display(5);
-}
-boton6.onclick=function(e){
-    display(6);
-}
-boton7.onclick=function(e){
-    display(7);
-}
-boton8.onclick=function(e){
-    display(8);
-}
-boton9.onclick=function(e){
-    display(9);
-}
-botons.onclick=function(e){
-    suma();
-}
-botonr.onclick=function(e){
-    resta();
-}
-botonm.onclick=function(e){
-    mult();
-}
-botond.onclick=function(e){
-    div();
-}
-botonc.onclick=function(e){
-    c();
-}
-botonres.onclick=function(e){
-    res();
-}
-botonb.onclick=function(e){
-    borrar();
-}
-
+botonx.onclick=function(e){display(".");}
+boton0.onclick=function(e){display(0);}
+boton1.onclick=function(e){display(1);}
+boton2.onclick=function(e){display(2);}
+boton3.onclick=function(e){display(3);}
+boton4.onclick=function(e){display(4);}
+boton5.onclick=function(e){display(5);}
+boton6.onclick=function(e){display(6);}
+boton7.onclick=function(e){display(7);}
+boton8.onclick=function(e){display(8);}
+boton9.onclick=function(e){display(9);}
+botons.onclick=function(e){suma();}
+botonr.onclick=function(e){resta();}
+botonm.onclick=function(e){mult();}
+botond.onclick=function(e){div();}
+botonc.onclick=function(e){c();}
+botonres.onclick=function(e){res();}
+botonb.onclick=function(e){borrar();}
 document.getElementById("display")=result;
 function display(num){       
         if(cosa){
@@ -84,8 +47,7 @@ function display(num){
             cosa=false;
             cosa2=false;
         }  
-        document.getElementById("display").value+=num;
-            
+    document.getElementById("display").value+=num;            
 }
 function suma(){
     if(cosa2){
@@ -133,19 +95,15 @@ function div(){
 }
 function borrar(){
     document.getElementById("display").value=parseInt((document.getElementById("display").value)/10);
-
 }
 function c(){
    var result="";
    acum.length=0; 
    oper.length=0;
    document.getElementById("display").value="";
-
 }
-function res(){
-    
-    acum.push(parseFloat(document.getElementById("display").value));
-    
+function res(){    
+    acum.push(parseFloat(document.getElementById("display").value));    
     var result=acum[0];
     for(i=1;i<=acum.length;i++){       
         if(isNaN(oper[i-1])){            
@@ -153,8 +111,7 @@ function res(){
                 result+=acum[i];                
             }
             else if(oper[i-1]=='r'){
-                result-=acum[i];
-                
+                result-=acum[i];                
             }
             else if(oper[i-1]=='d'){
                 result/=acum[i];

@@ -1,0 +1,39 @@
+body{
+    margin: auto;
+    width: 1200px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    border: 10px;
+    background-color: rgb(124, 235, 138);
+    display: grid;
+    grid-template-columns:  1fr 1fr 200px;
+    grid-template-rows: 80px 1f  1fr 1fr 100px;
+    grid-gap: 1rem;
+    grid-template-areas: 
+        "hd hd hd"
+        "nav nav nav"
+        "ct ct sb"
+        "ct ct ."
+        "ft ft ft";
+}
+div{
+    border-style: solid;
+    border-color: black;
+}
+.header{
+    grid-area: hd;
+}
+.navegator{
+    grid-area: nav;
+}
+.sidebar{
+    grid-area: sb;
+    }
+.content{
+    grid-area: ct;
+}
+.footer{
+    grid-area: ft;
+}
+
