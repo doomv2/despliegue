@@ -1,0 +1,38 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+   
+    <title>Plantilla</title>
+    
+    <link rel="stylesheet"  href="css/EjercicioPlantilla.css" />
+</head>
+<body>
+    <header>
+       <h1>Titulo De Mi Pagina.yo</h1> 
+    </header>
+    <section>
+        <h2>Bienvenidos</h2>
+        <article>
+            <script>
+                    var meses=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+                    var mes=prompt("introduce mes:");
+                    meses.push(mes);
+                    var cont=0;
+                    while(cont<meses.length){
+                        document.write(meses[cont]);
+                        cont++;
+                    }
+            </script>
+        </article>
+    </section>
+    <aside>
+        Publicidad<br>
+        <img src="Imagenes/PC-Master.png" width="280px" height="150px"></aside>
+    </aside>
+    <footer>
+        Derechos de autor reservados para mi
+    </footer>
+    
+</body>
+</html>

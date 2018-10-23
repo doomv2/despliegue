@@ -1,0 +1,50 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <script>
+        var numIntento=[];
+        var cont=["primera","segunda","tercera","cuarta","quinta","sexta","septima","octava","novena","decima"];
+        var cont2=["Primer","Segundo","Tercer","Cuarto","Quinto","Sexto","Septimo","Octavo","Noveno","Decimo"]
+        var aleatorio= Math.round(Math.random()*9+1);
+        var intentos=0;
+        var num=prompt("introduce tu numero");
+        numIntento.push(num);
+        do{            
+            
+            if(num==aleatorio){
+                
+            }
+            else if(num<aleatorio){
+                document.write("Has introducido el "+num+" el numero que buscas es mas grande introduce otro<br> ");
+                document.write(cont2[intentos]+" intento has escrito "+numIntento[intentos]+"<br>");
+
+                num=prompt("El numero es mas grande introduce otro.");
+                numIntento.push(num);
+                intentos++;
+            }
+            else if(num>aleatorio){
+                document.write(cont2[intentos]+" intento has escrito "+numIntento[intentos]+"<br>");
+
+                document.write("Has introducido el "+num+" el numero que buscas es mas pequeño introduce otro<br> ");
+                num=prompt("el numero es mas pequeño");
+                numIntento.push(num);
+                intentos++;
+            }
+                
+        }while(num!=aleatorio);       
+        alert("Enhorabuena lo has conseguido a la "+cont[intentos]);
+        document.write("Enhorabuena lo has conseguido a la "+cont[intentos]+". El numero era "+aleatorio+"<br>");
+        for(var x=0;x<numIntento.length;x++){
+           // document.write(cont2[x]+" intento has escrito "+numIntento[x]+"<br>");
+        }
+    </script>
+</body>
+</html>

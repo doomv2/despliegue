@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/css.css" />
+</head>
+<body>
+    <header>
+        Ejercicio de matematicas
+        <br>
+
+    </header>
+    <script >
+      /*  do{
+    var n1=parseInt(prompt("Primer numero:"));
+    var n2=parseInt(prompt("Segundo numero:"));
+        }while( isNaN(n1) || isNaN(n2));
+        */
+        var n1=parseFloat(prompt("Primer numero:"));
+        if(!isNaN(n1)){
+                var n2=parseFloat(prompt("Segundo numero:")); 
+                if(!isNaN(n2)){
+                    var n3=prompt("Operando:").toLowerCase(); 
+                     if (n3=="multiplicacion"|| n3=="*"){
+                        document.write(n1+"*"+n2+"="+(n1*n2));
+
+                }else if (n3=="suma" || n3=="+"){
+                        document.write(n1+"+"+n2+"="+(n1+n2));
+
+                }else if (n3=="resta"|| n3=="-"){
+                        document.write(n1+"-"+n2+"="+(n1-n2));
+
+                }else if (n3=="division" || n3=="/"){
+                        document.write(n1+"/"+n2+"="+(n1/n2));
+                }
+                }else{alert("No es un numero.");
+                    document.write("Introduciste el segundo numero mal");}
+        }else{alert("No es un numero.");
+             document.write("Introduciste el primer numero mal");}
+        
+            
+
+    </script>  
+        
+    
+    
+    <footer>
+        
+    </footer>
+</body>
+</html>

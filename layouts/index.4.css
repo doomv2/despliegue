@@ -1,0 +1,52 @@
+body{
+    width: 900px;
+    margin: auto;
+}
+header{
+    border-style: solid;
+    border-color: yellow;   
+    border-radius: 10px;
+    background-color: bisque;
+}
+nav{
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 10px;
+    background-color: bisque;
+    width: auto;
+    
+}
+aside{
+    border-style: solid;
+    border-color: blueviolet;
+    border-radius: 10px;
+    background-color: violet;
+    width: 188px;
+    float: left;
+}
+
+main{
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 10px;
+    background-color: greenyellow;
+    width: 700px;
+    float: right;
+    
+}
+article{
+    width: 100%;
+    float: left;
+    margin: auto;
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 10px;
+    background-color: greenyellow;
+}
+footer{
+    border-style: solid;
+    border-color: yellow;   
+    border-radius: 10px;
+    background-color: bisque;
+    clear: both;
+}

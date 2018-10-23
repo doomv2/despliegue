@@ -1,0 +1,45 @@
+
+header{
+    border-style: solid;
+    border-color: yellow;   
+    border-radius: 10px;
+    background-color: bisque;
+    width: 900px;
+    margin: auto;
+}
+.nav{
+    border-style: solid;
+    border-color: blueviolet;
+    border-radius: 10px;
+    background-color: violet;
+    width: 150px;
+    
+}
+.main{
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 10px;
+    background-color: greenyellow;
+    width: 735px;
+    margin: auto;
+}
+footer{
+    border-style: solid;
+    border-color: yellow;   
+    border-radius: 10px;
+    background-color: bisque;
+    width: 900px;
+    margin: auto;
+}
+.body{
+    width: 900px;
+    margin: auto;
+    display: flex;
+}
+.body .nav{
+    align-self: flex-start;
+    flex: 1 1 15%;
+}
+.body .main{
+    flex: 1 1 75%;
+}

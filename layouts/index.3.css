@@ -1,0 +1,44 @@
+body{
+    width: 900px;
+    margin: auto;
+}
+header{
+    border-style: solid;
+    border-color: yellow;   
+    border-radius: 10px;
+    background-color: bisque;
+}
+nav{
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 10px;
+    background-color: bisque;
+    width: auto;
+    
+}
+
+main{
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 10px;
+    background-color: greenyellow;
+    width: 894px;
+    float: right;
+    
+}
+article{
+    width: 49.3%;
+    float: left;
+    margin: auto;
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 10px;
+    background-color: greenyellow;
+}
+footer{
+    border-style: solid;
+    border-color: yellow;   
+    border-radius: 10px;
+    background-color: bisque;
+    clear: both;
+}

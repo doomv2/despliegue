@@ -1,0 +1,37 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <script>
+        var aleatorio= Math.round(Math.random()*9+1);
+        
+        var num=prompt("introduce tu numero");
+        do{            
+            
+            if(num==aleatorio){
+                
+            }
+            else if(num<aleatorio){
+                num=prompt("El numero es mas grande introduce otro.");
+                document.write("el numero es mas grande introduce otro<br> ");
+            }
+            else if(num>aleatorio){
+                num=prompt("el numero es mas pequeño");
+                document.write("el numero es mas grande introduce otro<br> ");
+
+            }
+               
+        }while(num!=aleatorio);       
+        alert("Enhorabuena lo has conseguido.");
+        document.write("Enhorabuena lo has conseguido.<br> ")
+
+    </script>
+</body>
+</html>

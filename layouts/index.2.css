@@ -1,0 +1,42 @@
+body{
+    width: 900px;
+    margin: auto;
+}
+header{
+    border-style: solid;
+    border-color: yellow;   
+    border-radius: 10px;
+    background-color: bisque;
+}
+nav{
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 10px;
+    background-color: bisque;
+    width: auto;
+    
+}
+aside{
+    border-style: solid;
+    border-color: blueviolet;
+    border-radius: 10px;
+    background-color: violet;
+    width: 150px;
+    float: right;
+}
+main{
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 10px;
+    background-color: greenyellow;
+    width: 735px;
+    float: right;
+    
+}
+footer{
+    border-style: solid;
+    border-color: yellow;   
+    border-radius: 10px;
+    background-color: bisque;
+    clear: both;
+}
