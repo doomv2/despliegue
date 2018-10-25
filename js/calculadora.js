@@ -1,5 +1,6 @@
-var cosa= false;
-var cosa2= false;
+var cosa= false; //reseteo automatico entre operacion y operacion 
+var cosa2= false; // cuando acumulas operaciones despues de darle al = 
+var coma = false; // no poder poner mas de una coma
 var result=" ";
 var acum=[];
 var oper=[];
@@ -22,7 +23,8 @@ var botonc=document.getElementById("id_botonc");
 var botonb=document.getElementById("id_botonb");
 var botonres=document.getElementById("id_botonres");
 
-botonx.onclick=function(e){display(".");}
+botonx.onclick=function(e){if(!coma){display(".");
+coma=true;}}
 boton0.onclick=function(e){display(0);}
 boton1.onclick=function(e){display(1);}
 boton2.onclick=function(e){display(2);}
@@ -41,7 +43,7 @@ botonc.onclick=function(e){c();}
 botonres.onclick=function(e){res();}
 botonb.onclick=function(e){borrar();}
 document.getElementById("display")=result;
-function display(num){       
+function display(num){               
         if(cosa){
             c();
             cosa=false;
@@ -50,15 +52,23 @@ function display(num){
     document.getElementById("display").value+=num;            
 }
 function suma(){
+    
     if(cosa2){
         acum.length=0;
         oper.length=0;
         cosa=false;
         cosa2=false;
     }
+    
     acum.push(parseFloat(document.getElementById("display").value));
     oper.push("s");
     document.getElementById("display").value="";
+    coma=false;
+    /*if(acum.length>=2){       
+    res();    
+    cosa=false;
+    }*/
+    
 }
 function resta(){
     if(cosa2){
@@ -70,6 +80,8 @@ function resta(){
     acum.push(parseFloat(document.getElementById("display").value));
     oper.push("r");
     document.getElementById("display").value="";
+    coma=false;
+
 }
 function mult(){
     if(cosa2){
@@ -81,6 +93,8 @@ function mult(){
     acum.push(parseFloat(document.getElementById("display").value));
     oper.push("m");
     document.getElementById("display").value="";
+    coma=false;
+
 }
 function div(){
     if(cosa2){
@@ -92,6 +106,8 @@ function div(){
     acum.push(parseFloat(document.getElementById("display").value));
     oper.push("d");
     document.getElementById("display").value="";
+    coma=false;
+
 }
 function borrar(){
     document.getElementById("display").value=parseInt((document.getElementById("display").value)/10);
@@ -124,4 +140,6 @@ function res(){
     document.getElementById("display").value=result;
     cosa=true;
     cosa2=true;
+    coma=false;
+    acum[0]=result;
 }
