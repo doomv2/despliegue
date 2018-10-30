@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Elements from inline-block to block to adapt the website to a smaller screen</title>
+		<style type="text/css">
+			#contenedor .bloque{
+				display: inline-block;	/* Essential to show the blocks in-line */
+				height:300px;
+				width: 300px;
+				border:1px solid #333;
+				background: #999;
+				margin:20px;				
+			}
+			@media all and (max-width: 800px){ /*If the width is less than or equal to 800px then:*/
+				#contenedor .bloque{
+					display: block; /*En este ejemplo cambiamos la forma de displayarse a bloque, en el siguiente no, observad la diferencia*/
+					width: auto;
+					/*background: #999;*/
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Elements from inline-block to block to adapt the website to a smaller screen </h1>
+		<h3 id="instructions"><u>--> Press to see the Instructions (Ejercicio para l@s alumn@s de Presencial) <--</u></h3>
+		<div id="contenedor">
+			<div class="bloque">[Text1 / Img1]</div>
+			<div class="bloque">[Text2 / Img2]</div>
+			<div class="bloque">[Text3 / Img3]</div>
+			<div class="bloque">[Text4 / Img4]</div>
+			<div class="bloque">[Text5 / Img5]</div>
+		</div>
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$("#instructions").click(function () {
+					$(this).html("Create a copy of the last web. <br />Now modify the copy in order to change the way the blocks are displayed. <br />It is exactly the same html code but I have added the CSS code to tell the firefox:<br /> If the window browser size is equal or less than 800px, at the divs you have to change value of the display and width property to have the same behaviour as I have.");
+				});				
+			});
+		</script>
+	</body>
+</html>

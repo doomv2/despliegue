@@ -2,17 +2,15 @@
     box-sizing: border-box;
 }
 body{
-    
     width: 100%;
+    display: flex;
     margin: auto;
-    border-style: solid;
     text-align: center;
 }
 .container {
-    border: 1px solid black;
     display: grid;
     width:100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 150px 1fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas:
     "logo home title"
@@ -20,22 +18,27 @@ body{
     "main main main";
 }
 .logo{grid-area:logo;
-    border: 1px solid black;
     }
 .home{grid-area:home;
-    border: 1px solid black;
+    position: relative;
+    top: 50%;
+    font-size: 20px;
     }
 .title{grid-area:title;
-    border: 1px solid black;
+    color:#E55555;
+    position: relative;
+    top: 50%;
+    font-size: 20px;
     }
 nav{
-    border: 1px solid black;
     grid-area:nav;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 200px;
     grid-template-rows: auto;
     grid-template-areas: 
     "menu1 menu2 menu3 menu4 menu5 search";
+    color:#E55555;
+    background-color: #636363;
 }
 .menu1{grid-area:menu1;}
 .menu2{grid-area:menu2;}
@@ -51,10 +54,10 @@ nav>div{
 .search{grid-area: search;
     margin-left: 30px;
 border: none;}
-main{grid-area:main;}
+main{grid-area:main;
+    border: 1px solid black;}
 article{
     margin: 10px;
-    border: 1px solid black;
     display: grid;
     grid-template-columns: 100px  1fr 100px;
     grid-template-rows: auto;
@@ -62,12 +65,12 @@ article{
     "title dct img";
 }
 .titulo{grid-area:title;
-    border: 1px solid black;
+    color: #E55555;
 }
 p{grid-area:dct;
-    border: 1px solid black;
+    color:#636363;
+    text-align: left;
 }
-img{grid-area: img;
+article>img{grid-area: img;
     width: 100%;
-    border: 1px solid black;
 }

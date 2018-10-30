@@ -1,0 +1,37 @@
+@media (min-width:900px){
+		div#mydiv{
+		display: block;
+		width: 900px;
+		margin: 0px auto;
+		height: 100px;
+		background: radial-gradient(magenta, black);
+		border-radius: 2em;
+		padding-left: 2em;
+		font-size: 32px;
+		font-family: serif;
+		color: green;
+	}
+}
+@media (min-width:500px){
+		div#mydiv{
+		/*display: none;*/
+		width: 500px;
+		margin: 0px auto;
+		height: 100px;
+		background: radial-gradient(magenta, turquoise, black, yellow);
+		font-size: 32px;
+		font-family: arial;
+		color: white;
+	}
+}
+@media (min-width: 0px){
+	div#mydiv{
+		/*display: none;*/
+		width: 300px;
+		margin: 0px auto;
+		height: 100px;
+		background: #DDEE00;
+		font-size: 32px;
+		font-family: cursive;
+	} 
+}
