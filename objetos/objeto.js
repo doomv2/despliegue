@@ -15,11 +15,34 @@ for(i=0;i<100;i++){
     }
 document.write("</tr></table>");
 }
+
 function calculo(string){
 var cadena=string;
-if(cadena.contains("+")){
-    var num1= cadena.split("+");
-    var result=parseFloat(num[0])+parseFloat(num[1]);
+var num1;
+var result;
+if(cadena.includes("+")){
+    alert("entra");
+     num1 = cadena.split("+");     
+    var result=parseFloat(num[0])+parseFloat(num[1]);    
+}if(cadena.includes("-")){
+    alert("entra");
+     num1= cadena.split("-");     
+    var result=parseFloat(num[0])-parseFloat(num[1]);
+}if(cadena.includes("/")){
+    alert("entra");
+     num1= cadena.split("/");     
+    var result=parseFloat(num[0])/parseFloat(num[1]);
+}if(cadena.includes("*")){
+    alert("entra");
+     num1= cadena.split("*");     
+    var result=parseFloat(num[0])*parseFloat(num[1]);
+}else{
+    result="FORMATO INCORRECTO";
 }
 document.write(result);
+}
+function fecha(){
+    alert("hola");
+    document.write("Hoy es"+ getDay()+", "+getDate()+" de"+getMonth()+","+ getFullYear());
+    alert("porque");
 }
