@@ -1,4 +1,6 @@
-
+//Mi ordenador de casa esta jodido, hasta el viernes no tengo
+//por eso no pude hacer ninguno mas en casa
+//esto es lo que he echo hoy 31/10/18
 function tabla(){
 var numeros=[];
 for(i=0;i<100;i++){
