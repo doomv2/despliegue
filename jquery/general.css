@@ -1,0 +1,114 @@
+body {
+    background-image: url("../Imagenes/Fondo.PNG");
+    background-repeat: no-repeat;
+    background-size: 100%
+}
+.refrescos{
+    width: 150px;
+    height: 140px;
+}
+.numAleatorio{
+    width: 150px;
+    height: 140px;
+}
+.calculadora{
+    width: 150px;
+    height: 140px;
+}
+.numero{
+    background-color:rgba(135, 135, 135, 0.5);
+}
+.operando{
+    background-color: rgb(83, 80, 80);
+}
+#calculadora{
+    text-align: center;
+
+}
+#calculadora{    
+    width: 100%;
+    background-color: rgba(135, 135, 135, 0.5);
+    
+}
+#calculadora #id_botonres{
+    width: 100%;
+}
+#calculadora #id_botons{
+    height: 50px;
+}
+header{
+    background-color:rgba(135, 135, 135, 0.5);
+    margin-left: 170px;
+    padding: 10px 30px 10px 30px;
+    border-left: 30px;
+    border-top: 30px;
+    border-right: 30px;
+    width: 1200px;
+    text-align: center;
+    border-radius: 15px;
+}
+section{
+    background-color:rgba(135, 135, 135, 0.5);
+    overflow-y: auto;
+    width: 1200px;
+    margin-left: 50px;
+    margin-top: 25px;
+    padding: 30px 30px 30px 30px;
+    border-radius: 15px;
+    float: left;
+    height: 50%;   
+
+}
+aside{
+    background-color:rgba(135, 135, 135, 0.5);
+
+    width: 150px;
+    float: right;
+    margin-left: 25px;
+    margin-top: 25px;
+    border-radius: 15px;
+    height: 50%;
+    padding: 30px 30px 30px 30px;
+    border-right: 30px;
+    margin-right: 15px;
+}
+footer{
+    background-color:rgba(135, 135, 135, 0.5);
+
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 25px;
+    width: 92%;
+    border-radius: 15px;
+    padding: 5px 30px 5px 30px;
+    text-align: center;
+}
+
+.nombre{
+    float: none;
+}
+article{
+    background-color: rgba(142, 142, 142, 0.5); 
+    border-radius: 15px;
+    margin-left: 10px;
+    padding: 5px 30px 5px 30px;
+    float: left;
+}
+footer h2 {
+    color:black;
+
+}
+footer p {
+    color: black;
+}
+ #alerta{
+    position: absolute;
+    background: red;
+    width: 25%;
+    height: 20%;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+
