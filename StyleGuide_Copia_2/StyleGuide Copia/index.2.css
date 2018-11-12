@@ -1,0 +1,196 @@
+/*-- Basic --------------------------------------------------------------------------------------------------*/
+* {
+	box-sizing: border-box;
+	}
+	/*-- END Basic ----------------------------------------------------------------------------------------------*/
+	/*-- BODY ---------------------------------------------------------------------------------------------------*/
+	body {
+	max-width: 1200px;
+	text-align: center;
+	margin: auto;
+	}
+	/*-- END BODY -----------------------------------------------------------------------------------------------*/
+	/*-- Flex Items Header --------------------------------------------------------------------------------------*/
+	header {
+	display: flex;
+	}
+	.logo {
+	flex: 1 1 10%;
+	align-self: center;
+	}
+	.home {
+	flex: 1 1 10%;
+	font-size: 20px;
+	align-self: center;
+	}
+	.title {
+	flex: 1 1 10%;
+	color: #E55555;
+	font-size: 20px;
+	align-self: center;
+	}
+	/*-- END FlexHeader -----------------------------------------------------------------------------------------*/
+	/*-- NAV ----------------------------------------------------------------------------------------------------*/
+	nav {
+	position: sticky;
+	top: 0px;
+	display: flex;
+	justify-content: space-between;
+	color: #E55555;
+	background-color: #636363;
+	padding: 10px;
+	}
+	/*-- Flex Items Nav ------------------------------------------------------------------------------------------*/
+	#menu {
+	flex: 0 1 50%;
+	}
+	.search {
+	flex: 0 1 10%;
+	}
+	/*-- END Flex Items Nav --------------------------------------------------------------------------------------*/
+	/*-- Strip the ul of padding and list styling ----------------------------------------------------------------*/
+	nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	}
+	/*-- Create a horizontal list with spacing -------------------------------------------------------------------*/
+	nav li {
+	display: inline-block;
+	margin-right: 1px;
+	}
+	/*-- Style for menu links ------------------------------------------------------------------------------------*/
+	nav li a {
+	display: block;
+	width: 105px;
+	height: 20px;
+	color: #fff;
+	background: #2f3036;
+	text-decoration: none;
+	}
+	/*-- Hover state for top level links -------------------------------------------------------------------------*/
+	nav li:hover a {
+	background: #E55555;
+	}
+	/*-- Display the dropdown on hover ---------------------------------------------------------------------------*/
+	nav .show-menu {
+	display: none;
+	}
+	nav input[type=checkbox] {
+	display: none;
+	}
+	/*-- END NAV -------------------------------------------------------------------------------------------------*/
+	/*-- VIEW1 -------------------------------------------------------------------------------------------------*/
+	.view1{
+	display: flex;
+	}
+	/*-- Main ----------------------------------------------------------*/
+	main{
+	border: 1px solid black;
+	flex: 1 1 80%;
+	}
+	main p , main .codigo{
+	text-align: left;
+	}
+	.codigo{
+	max-width: 25%;
+	}
+	table .codigo{
+		max-width: 40%;
+		}
+	main img{
+	width: 100%;
+	height: auto;
+	}
+	/*-- Article --------------------------------------------------------*/
+	article p {
+	padding-left: 10px; 
+	}
+	article h3{
+		text-align: left;
+	}
+	/*-- Aside ----------------------------------------------------------*/
+	aside{
+	border: 1px solid black;
+	text-align: left;
+	flex: 1 1 20%;
+	}
+	aside ul{
+	list-style: none;
+	padding-left: 25px;
+	}
+	aside a:link, aside a:visited{
+	color:#E55555;
+	text-decoration: none;
+	}
+	aside a:hover{
+	color: #636363;
+	}
+	/*-- Footer ----------------------------------------------------------*/
+	.coment{
+	text-align: left;
+	border: 1px solid black;
+	}
+	@media (max-width: 700px){
+	.container .title{
+	display: none;
+	}
+	}
+	@media (max-width: 450px){
+	.container .logo{
+	display: none;
+	}
+	.container aside{
+	display: none;
+	}
+	nav>.search{
+	display: none;
+	}
+	.container .home{
+	display: none;
+	}
+	nav {
+	justify-content: left;
+	flex-wrap: wrap;
+	}
+	/*-- Hamburger menu ---------------------------------------------------------------------------------------*/
+	/*-- Make dropdown links appear inline --------------------------------------------------------------------*/
+	nav ul {
+	position: static;
+	display: none;
+	}
+	/*-- Create vertical spacing-------------------------------------------------------------------------------*/
+	nav li {
+	margin-bottom: 1px;
+	}
+	/*-- Make all menu links full width*/
+	nav ul li,
+	nav li a {
+	width: 100%;
+	}
+	/*-- Style 'show menu' label button and hide it by default -------------------------------------------------*/
+	nav .show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #E55555;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+	}
+	/*-- Hide checkbox -----------------------------------------------------------------------------------------*/
+	nav input[type=checkbox] {
+	display: none;
+	}
+	/*-- Show menu when invisible checkbox is checked ----------------------------------------------------------*/
+	nav input[type=checkbox]:checked~#menu {
+	display: block;
+	flex: 1 1 100%;
+	}
+	/*-- Display 'show menu' link*/
+	nav .show-menu {
+	display: block;
+	flex: 1 1 100%;
+	}
+	}
+	/*-- END Size 450px ---------------------------------------------------------------------------------------------*/
