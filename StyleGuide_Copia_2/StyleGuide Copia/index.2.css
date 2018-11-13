@@ -102,6 +102,12 @@
 	width: 100%;
 	height: auto;
 	}
+	table, table td{	
+		padding-left: 40px;
+	}
+	table li {	
+		text-align: left;
+	}	
 	/*-- Article --------------------------------------------------------*/
 	article p {
 	padding-left: 10px; 
