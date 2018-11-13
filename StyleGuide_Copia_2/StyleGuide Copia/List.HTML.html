@@ -79,6 +79,131 @@
                             </td>
                     </tr>
                 </table>
+                <h3>
+                   <p>HTML Lists and CSS List Properties</p>
+               </h3>
+               <p>In HTML, there are two main types of lists:</p>
+                  <ul>
+                     <li>
+                        <p>unordered lists (&lt;ul&gt;) - the list items are marked with bullets</p>
+                     </li>
+                     <li>
+                           <p>lists (&lt;ol&gt;) - the list items are marked with numbers or letters</p> 
+                     </li>
+                  </ul>
+                  <p>The CSS list properties allow you to:</p>
+                  <ul>
+                     <li>
+                        <p>
+                              Set different list item markers for ordered lists
+                        </p>
+                     </li>
+                     <li>
+                        <p>
+                              Set different list item markers for unordered lists
+                        </p>
+                     </li>
+                     <li>
+                        <p>
+                              Set an image as the list item marker  
+                        </p>
+                     </li>
+                     <li>
+                        <p>
+                              Add background colors to lists and list ítems         
+                        </p>
+                     </li>
+                  </ul>
+                  <h3>
+                        <p>
+                           Different List Item Markers
+                        </p>
+                  </h3>
+                  <p>
+                     The <b>list-style-type</b>  property specifies the type of list item marker.
+                  </p>
+                  <h3>
+                        <p>
+                              An Image as The List Item Marker
+                        </p>
+                  </h3>
+                  <p>
+                        The <b>list-style-image</b>  property specifies an image as the list item marker.
+                  </p>
+                  <h3>
+                        <p>
+                              Position The List Item Markers
+                        </p>
+                  </h3>
+                  <p>
+                        The <b>list-style-position</b>  property specifies the position of the list-item markers (bullet points).
+                  </p>
+                  <p>
+                     <b>list-style-position: outside;</b> means that the bullet points will be outside the list item. The start of each line of a list item will be aligned vertically. This is default:
+                  </p>
+                  <img src="imagenes/list1.png" alt="list1" class="codigo">
+                  <p>
+                     <b>list-style-position: inside;</b> means that the bullet points will be inside the list item. As it is part of the list item, it will be part of the text and push the text at the start:
+                  </p>
+                  <img src="imagenes/list2.png" alt="list2" class="codigo">
+                  <h3>
+                        <p>
+                              Remove Default Settings
+                        </p>
+                  </h3>
+                  <p>
+                        The <b>list-style-type:none</b>  property can also be used to remove the markers/bullets.
+                         Note that the list also has default margin and padding. 
+                         <br>To remove this, add <b>margin:0; </b> and <b>padding:0; </b> to &lt;ul&gt; or &lt;ol&gt;.
+                  </p>
+                  <h3>
+                        <p>
+                              List - Shorthand property
+                        </p>
+                  </h3>
+                  <p>
+                        The <b>list-style</b> property is a shorthand property. It is used to set all the list properties 
+                        in one declaration.
+                  </p>
+                  <p>
+                        When using the shorthand property, the order of the property values are:
+                  </p>
+                  <ul>
+                     <li>
+                        <p>
+                           <b>list-style-type</b> if a list-style-image is specified, 
+                           the value of this property will be displayed if the image 
+                           for some reason cannot be displayed
+                        </p>
+                     </li>
+                     <li>
+                        <p>
+                           <b>list-style-position</b> specifies whether the 
+                           list-item markers should appear 
+                           inside or outside the content flow
+                        </p>
+                     </li>
+                     <li>
+                        <p>
+                           <b>list-style-image</b> specifies an image as the list item marker
+                        </p>
+                     </li>
+                  </ul>
+                  <p>
+                     If one of the property values above are missing, the default value for the missing property will be inserted, if any.
+                  </p>
+                  <h3>
+                        Styling List With Colors
+                  </h3>
+                  <p>
+                        We can also style lists with colors, to make them look a little more interesting.
+                  </p>
+                  <p>
+                        Anything added to the &lt;ol&gt; or &lt;ul&gt; tag, affects the entire list, while properties added to the &lt;li&gt; tag will affect the individual list ítems.
+                  </p>
+
+
+               
                 
 
                 </article>
