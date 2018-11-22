@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>StyleGuide</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" media="screen" href="../css/index.2.css" />
+      <script src="main.js"></script>
+   </head>
+   <!-- Body -->
+   <body>
+      <!-- Container -->
+      <div class="container">
+         <!-- Header -->
+         <header>
+            <div class="logo"><a href="index.html"><img src="../Imagenes/LOGO_PNG.png" alt="LOGO" height="100"></a></div>
+            <div class="home">Web Application Design</div>
+            <div class="title">HTML</div>
+         </header>
+         <!-- Nav -->
+         <nav>
+            <label for="show-menu" class="show-menu"><img src="../Imagenes/burger_icon.png" alt="BURGER_ICON" width="20"></label>
+            <input type="checkbox" id="show-menu" role="button">
+            <ul id="menu">
+               <li>
+                  <a href="Html.html">HTML</a>
+               </li>
+               <li>
+                  <a href="Css.html">CSS</a>
+               </li>
+            </ul>
+            <!-- Search -->
+            <input type="text" placeholder="Search" class="search">
+         </nav>
+         <div class="view1">
+            <aside>
+               <ul>
+                  <li>
+                     <a href="List.html">List</a>                
+                  </li>
+               </ul>
+               <ul>
+                  <li>
+                     <a href="Form.html">Formularios</a>                
+                  </li>
+               </ul>
+            </aside>
+            <main>
+               <article>
+                  <h2 class="titulo">Formularios en HTML</h2>
+                  <p>
+                     The HTML element defines a form that is used to collect user input:<br>
+                     Form elements are different types of input elements, like text fields, checkboxes, radio buttons, submit buttons, and more.<br>
+                     The <b>&lt;input&gt;</b> element is the most important form element.<br>
+                     Here are some examples:
+                  </p>
+                  <img src="../Imagenes/Form1.PNG" alt="Form1">
+                  <h3>
+                     Text Input
+                  </h3>
+                  <p>
+                        <b>&lt;input type="text"&gt;</b> defines a one-line input field for text input:
+                  </p>
+                  <img src="../Imagenes/Form2.PNG" alt="Form2">
+                  <p>
+                        This is how it will look like in a browser:
+                        <p> Name<br><Input type="text"/><br>
+                            Last Name:<br><Input type="text"/></p>
+                        
+                  
+                     
+                  </p>
+                  <h3>
+                        Radio Button Input
+                     </h3>
+                     <p>
+                           <b>&lt;input type="radio"&gt;</b> defines a radio button.
+                     </p>
+                     <img src="../Imagenes/Form3.PNG" alt="Form3">
+                     <p>
+                           This is how it will look like in a browser:
+                           <p>                              
+                                    <input type="radio" name="gender" value="male" checked> Male<br>
+                                    <input type="radio" name="gender" value="female"> Female<br>
+                                    <input type="radio" name="gender" value="other"> Other                              
+                           </p>
+                        
+                     </p>
+                     <h3>
+                           The Submit Button
+                        </h3>
+                        <p>
+                              <b>&lt;input type="submit"&gt;</b> defines a button for submitting the form data to a form-handler.
+                        </p>
+                        <img src="../Imagenes/Form4.PNG" alt="Form4">
+                        <p>
+                              This is how it will look like in a browser:
+                              <p>                                 
+                                 First name:<br>
+                                 <input type="text" name="firstname" value="Mickey"><br>
+                                 Last name:<br>
+                                 <input type="text" name="lastname" value="Mouse"><br><br>
+                                 <input type="submit" value="Submit">                                 
+                              </p>
+                           
+                        </p>
+                        <h3>
+                              The Action Attribute
+                           </h3>
+                           <p>
+                                 The <b>attribute</b>  defines the action to be performed when the form is submitted.
+                                 Normally, the form data is sent to a web page on the server when the user clicks on the submit button.
+                                 In the example above, the form data is sent to a page on the server called "/action_page.php". 
+                                 <br>This page contains a server-side script that handles the form data:
+                           </p>  
+               </article>
+            </main>
+         </div>
+         <div class="coment">
+            Coment:<input type="text" placeholder="Coment">
+         </div>
+      </div>
+   </body>
+</html>
