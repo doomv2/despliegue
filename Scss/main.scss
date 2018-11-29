@@ -1,0 +1,49 @@
+$translucent-white: rgba(255,255,255,0.3);
+$icon-square-length: 300px;
+$standard-border: 4px solid brown;
+
+h1 {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+   }
+   .banner {
+    font-family: 'Liberation Serif', cursive;
+    height: 400px;
+    background-image: url("lemonade.jpg");
+    .slogan {
+        position: absolute;
+        border: $standard-border;
+        top: 200px;
+        left: 25%;
+        width: 50%;
+        height: 200px;
+        text-align: center;
+        background-color: $translucent-white;
+        span {
+            font-size: 24px;
+            line-height: 200px;
+           }
+           
+       }
+       border : {
+        top: $standard-border;
+        bottom: $standard-border;
+       }
+       
+       
+   }
+   .container {
+    text-align: center;
+    font-family: 'Liberation Serif', cursive;
+    .icon {
+        display: inline-block;
+        margin: 2%;
+        border: $standard-border;
+        font-size: 32px;
+        width: $icon-square-length;
+        height: $icon-square-length;
+
+       }
+       
+   }
+   

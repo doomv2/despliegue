@@ -1,0 +1,43 @@
+h1 {
+  font-family: Roboto, sans-serif;
+  text-align: center;
+}
+
+.banner {
+  font-family: 'Liberation Serif', cursive;
+  height: 400px;
+  background-image: url("lemonade.jpg");
+  border-top: 4px solid brown;
+  border-bottom: 4px solid brown;
+}
+
+.banner .slogan {
+  position: absolute;
+  border: 4px solid brown;
+  top: 200px;
+  left: 25%;
+  width: 50%;
+  height: 200px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.banner .slogan span {
+  font-size: 24px;
+  line-height: 200px;
+}
+
+.container {
+  text-align: center;
+  font-family: 'Liberation Serif', cursive;
+}
+
+.container .icon {
+  display: inline-block;
+  margin: 2%;
+  border: 4px solid brown;
+  font-size: 32px;
+  width: 300px;
+  height: 300px;
+}
+/*# sourceMappingURL=main.css.map */
