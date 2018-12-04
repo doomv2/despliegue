@@ -1,23 +1,24 @@
-
-@mixin transition($time){
-    transition: $time;
-    -webkit-transition: $time;
-    -moz-transition: $time;
-    -o-transition: $time;
-    }@mixin transform-style($style){
-    transform-style: $style;
-    -moz-transform-style: $style;
-    -o-transform-style: $style;
-    -ms-transform-style: $style;
-    -webkit-transform-style: $style;
-    }
+$stripe-properties: to bottom, 15%, blue, white;
+@mixin transition($time) {
+  transition: $time;
+  -webkit-transition: $time;
+  -moz-transition: $time;
+  -o-transition: $time;
+}
+@mixin transform-style($style) {
+  transform-style: $style;
+  -moz-transform-style: $style;
+  -o-transform-style: $style;
+  -ms-transform-style: $style;
+  -webkit-transform-style: $style;
+}
 @mixin backface-visibility($visibility: hidden) {
-    backface-visibility: $visibility;
-    -webkit-backface-visibility: $visibility;
-    -moz-backface-visibility: $visibility;
-    -ms-backface-visibility: $visibility;
-    -o-backface-visibility: $visibility;
-    }
+  backface-visibility: $visibility;
+  -webkit-backface-visibility: $visibility;
+  -moz-backface-visibility: $visibility;
+  -ms-backface-visibility: $visibility;
+  -o-backface-visibility: $visibility;
+}
 @mixin stripes(
   $direction,
   $width-percent,
@@ -42,6 +43,34 @@
 @mixin photo-content {
   object-fit: cover;
 }
+@mixin stripes(
+  $direction,
+  $width-percent,
+  $stripe-color,
+  $stripe-background: #fff
+) {
+  background: repeating-linear-gradient(
+    $direction,
+    $stripe-background,
+    $stripe-background ($width-percent - 1),
+    $stripe-color 1%,
+    $stripe-background $width-percent
+  );
+}
+@mixin photo-content($file) {
+  content: url(#{$file}.jpg);
+  object-fit: cover;
+}
+@mixin text-hover($color) {
+  &:hover {
+    color: $color;
+  }
+}
+@mixin hover-color($color) {
+  &:hover {
+    color: $color;
+  }
+}
 .notecard {
   width: 300px;
   height: 180px;
@@ -52,9 +81,9 @@
   box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
   @include transform-style(preserve-3d);
   @include transition(1s);
-  &:hover{
-    @include transform (rotatey(-180deg));
-    }
+  &:hover {
+    @include transform(rotatey(-180deg));
+  }
   .front,
   .back {
     width: 100%;
@@ -70,6 +99,8 @@
       text-align: center;
       position: relative;
       top: 40%;
+      @include text-hover(red);
+      @include hover-color(red);
     }
   }
   .back {
@@ -80,10 +111,12 @@
     .definition {
       width: 100%;
       height: 100%;
-      .photo {
-        width: 60%;
-        margin: 0px auto;
-      }
+      @include stripes($stripe-properties...);
+    }
+    .photo {
+      @include photo-content("titanosaur");
+      width: 60%;
+      margin: 0px auto;
     }
   }
 }
