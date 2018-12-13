@@ -1,0 +1,67 @@
+@font-face {
+  font-family: DorovarFLF-Carolus;
+  src: url("http://192.168.208.110/~vicent/DorovarFLF-Carolus.ttf");
+}
+
+body {
+  width: 923px;
+  background-color: #fcc76b;
+  margin: 0px auto;
+}
+
+body header {
+  background-image: url(../img/logo_web.png);
+  height: 177px;
+  font-family: DorovarFLF-Carolus;
+  position: relative;
+}
+
+body header h1 {
+  position: absolute;
+  bottom: 4px;
+  margin: 0em;
+  margin-left: 6em;
+  color: #580101;
+}
+
+body .menu {
+  display: table;
+  width: 923px;
+  font-family: DorovarFLF-Carolus;
+  border-spacing: 5px;
+}
+
+body .menu .row {
+  display: table-row;
+}
+
+body .menu .row .cell {
+  display: table-cell;
+  text-align: center;
+  width: 33%;
+}
+
+body .menu .row .cell a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #580101;
+}
+
+body .menu .row .cell a:hover {
+  display: none;
+}
+
+body #content {
+  background-color: #ffffff;
+}
+
+body #content p {
+  margin: 0em 1em;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 10px;
+  -moz-column-count: 3;
+  -moz-column-gap: 10px;
+  column-count: 3;
+  column-gap: 10px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import 'helper/_variables.scss';
+@import 'helper/_placeholders.scss';
+@import 'helper/_animations.scss';
+
+
+
+body {
+  padding-top: 5%;
+  background-color:$bgcolor;
+}
+
+
+.slide-left {
+  position: relative;
+  left: 50%;
+  @include slide-left;
+}
+
+
+h3 {
+  color: $blue;
+  font-family: $slogan-font;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: $slogan-spacing;
+  line-height: 1.4;
+  position: relative;
+  padding-top: 2%;
+  left: -6.3%;  
+}
+
+
+/* Chrome, Safari, Opera */
+
+
+circle {
+  opacity: 1;
+}
+
+.element {
+  position: absolute;
+  top: 15%;
+  left: 46%;
+  animation-name: appear;
+  animation-duration: 4s;
+}
+
+#sass-logo {
+  width: 100px;
+  fill: $sass-logo;
+}
+

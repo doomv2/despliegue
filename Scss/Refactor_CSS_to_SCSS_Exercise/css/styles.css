@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@font-face {
+  font-family: DorovarFLF-Carolus;
+  src: url("DorovarFLF-Carolus.ttf"); }
+body {
+  width: 923px;
+  background-color: #fcc76b;
+  margin: 0px auto; }
+
+header {
+  background-image: url(../img/logo_web.png);
+  height: 177px;
+  font-family: DorovarFLF-Carolus;
+  position: relative;
+    /*la inmediata regla anterior y las tres primeras del h1,
+son para posicionar el texto de la cabecera a la parte inferior.
+Necesitamos posicionar relativamente al header para que h1 lo coja como referencia, sinó, cogeria al body*/ }
+  header h1 {
+    position: absolute;
+    bottom: 4px;
+    margin: 0em;
+    margin-left: 6em;
+    color: #580101; 
+}
+
+.menu {
+ display: table;
+ width: 923px;
+ font-family: DorovarFLF-Carolus;
+ border-spacing: 5px; 
+}
+.menu .row {
+ display: table-row; 
+}
+.menu .row .cell {
+ display: table-cell;
+ text-align: center;
+ width: 33%; 
+}
+.menu .row .cell a {
+text-transform: uppercase;
+text-decoration: none;
+color: #580101;
+ }
+.menu .row .cell a:hover {
+display: none; 
+}
+
+#content {
+background-color: #FFFFFF; 
+}
+#content p {
+margin: 0em 1em;
+-webkit-column-count: 3;
+-webkit-column-gap: 10px;
+-moz-column-count: 3;
+-moz-column-gap: 10px;
+column-count: 3;
+column-gap: 10px; 
+}
+

@@ -1,0 +1,14 @@
+ 
+
+@mixin slide-left{
+    animation: slide-left 5s;
+    -webkit-animation: slide-left 5s;
+  }
+  @keyframes slide-left {
+    from {
+      left: 20%;
+    }
+    to {
+      left: 50%;
+    }
+  }
