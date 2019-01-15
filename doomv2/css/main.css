@@ -69,3 +69,31 @@ aside {
 footer {
   grid-area: footer;
 }
+
+/*CALCULADORA*/
+.calculadora{
+  width: 150px;
+  height: 140px;
+}
+.numero{
+  background-color:rgba(135, 135, 135, 0.5);
+}
+.operando{
+  background-color: rgb(83, 80, 80);
+}
+#calculadora{
+  text-align:   width: 100%;;
+  width: 150px;
+  height: 140px;
+}
+#calculadora{    
+  width: 100%;
+  background-color: rgba(135, 135, 135, 0.5);
+  
+}
+#calculadora #id_botonres{
+  width: 100%;
+}
+#calculadora #id_botons{
+  height: 50px;
+}
