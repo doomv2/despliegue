@@ -1,95 +1,192 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Refrescos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/general.css" />
- 
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+
 </head>
-<body>     
+
+<body>
     <header>
+        <img />
         <h1>Clases de APP Cliente</h1>
         <h2>Raymond Andrei Iuhasz</h2>
+        <nav>
+            <ul class="main first">
+                <li>
+                    <a href="">JavaScript</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="refrescos.html">Maquina de refrescos</a>
+                        </li>
+                        <li>
+                            <a href="numAleatorio.html">Numeros Aleatorios</a>
+                        </li>
+                        <li>
+                            <a href="">Usuarios switch/case</a>
+                        </li>
+                        <li>
+                            <a href="caclucaldora.html">Calculadora</a>
+                        </li>
+                        <li>
+                            <a href="">Eventos Javascript</a>
+                        </li>
+                        <li>
+                            <a href="">Eventos Predefinidos</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="">Ejercicio 1</a>
+                                </li>
+                                <li>
+                                    <a href="">Ejercicio 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="main">
+                <li>
+                    <a href="">CSS</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="cssLectura.html">CSS Lectura</a>
+                        </li>
+                        <li>
+                            <a href="cssEstilos.html">CSS Estilos</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+            </ul>
+            <ul class="main last">
+                <li>
+                    <a href="">JQuery</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="fotos.html">Imagenes</a>
+                        </li>
+                        <li>
+                            <a href="juegoNum.html">Click Tester</a>
+                        </li>
+                        <li>
+                            <a href="">Tienda 1 Css</a>
+                        </li>
+                        <li>
+                            <a href="">Tienda 2</a>
+                        </li>
+                        <li>
+                            <a href="">Eventos Raton/Teclado</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="EventosRatonTeclado.html">Ejercicio 1</a>
+                                </li>
+                                <li>
+                                    <a href="EventosRatonTecladoZoom.html">Ejercicio 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Zoom</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <section>
-        <h2>Maquina de Refrescos</h2>
-        <article>
-            <table border="1">
-                <tr>
-                    <th>Refrescos</th>
-                    <th>Precio</th>
-                </tr>
-                <tr>
-                    <td>CocaCola</td>
-                    <td>2€</td>
-                </tr>
-                <tr>
-                    <td>Fanta</td>
-                    <td>1.50€</td>
-                </tr>
-                <tr>
-                    <td>Agua</td>
-                    <td>1€</td>
-                </tr>
-                <tr>
-                    <td>Nestea</td>
-                    <td>2€</td>
-                </tr>
-                <tr>
-                    <td>Calsberg</td>
-                    <td>2.50€</td>
-                </tr>
-                <tr>
-                    <td>Zumo Melocoton</td>
-                    <td>1.80€</td>
-                </tr>
-                <tr>
-                    <td>Zumo Piña</td>
-                    <td>1.80€</td>
-                </tr>
-                <table>
+    <main>
+        <!--<img  id="follen"src="../imgs/Follen.jpg">-->
+        <section>
+            <h2>Maquina de Refrescos</h2>
+            <article>
+                <table border="1">
+                    <tr>
+                        <th>Refrescos</th>
+                        <th>Precio</th>
+                    </tr>
+                    <tr>
+                        <td>CocaCola</td>
+                        <td>2€</td>
+                    </tr>
+                    <tr>
+                        <td>Fanta</td>
+                        <td>1.50€</td>
+                    </tr>
+                    <tr>
+                        <td>Agua</td>
+                        <td>1€</td>
+                    </tr>
+                    <tr>
+                        <td>Nestea</td>
+                        <td>2€</td>
+                    </tr>
+                    <tr>
+                        <td>Calsberg</td>
+                        <td>2.50€</td>
+                    </tr>
+                    <tr>
+                        <td>Zumo Melocoton</td>
+                        <td>1.80€</td>
+                    </tr>
+                    <tr>
+                        <td>Zumo Piña</td>
+                        <td>1.80€</td>
+                    </tr>
+                    <table>
                         <tr>
                             <th>Tu Compra</th>
                             <th>Tu Dinero</th>
                             <th>Vueltas</th>
                         </tr>
                         <script>
-                                alert("Tiene usted los precios a su izquierda, dele acceptar para continuar.");
-                                var dinero=parseFloat(prompt("INTRODUZCA EL DINERO"));
-                                var bebida=prompt("¿QUE QUIERE COMPRAR?").toLowerCase();
-                                if(bebida=="cocacola"&&dinero>=2 || bebida=="fanta"&&dinero>=1.50 || bebida=="agua"&&dinero>=1 || bebida=="nestea"&&dinero>=2 
-                                || bebida=="calsberg"&&dinero>=2.50|| bebida=="zumo melocoton"&&dinero>=1.80 || bebida=="zumo piña"&&dinero>=1.80){
-                                    alert("Gracias por su compra!")
-                                } else {
-                                    alert("Te falta dinero.")
-                                } 
-                            </script>
+                            alert("Tiene usted los precios a su izquierda, dele acceptar para continuar.");
+                            var dinero = parseFloat(prompt("INTRODUZCA EL DINERO"));
+                            var bebida = prompt("¿QUE QUIERE COMPRAR?").toLowerCase();
+                            if (bebida == "cocacola" && dinero >= 2 || bebida == "fanta" && dinero >= 1.50 || bebida == "agua" && dinero >= 1 || bebida == "nestea" && dinero >= 2
+                                || bebida == "calsberg" && dinero >= 2.50 || bebida == "zumo melocoton" && dinero >= 1.80 || bebida == "zumo piña" && dinero >= 1.80) {
+                                alert("Gracias por su compra!")
+                            } else {
+                                alert("Te falta dinero.")
+                            } 
+                        </script>
                         <tr>
-                            <td><script>document.write(bebida)</script></td>
-                            <td><script>document.write(dinero)</script></td>
-                            <td><script>
-                                if(bebida=="cocacola"){document.write(dinero-2);}
-                                else  if(bebida=="fanta"){document.write(dinero-1.5);}
-                                else  if(bebida=="agua"){document.write(dinero-1);}
-                                else  if(bebida=="nestea"){document.write(dinero-2);} 
-                                else  if(bebida=="calsberg"){document.write(dinero-2.5);} 
-                                else  if(bebida=="zumo melocoton"){document.write(dinero-1.8);} 
-                                else  if(bebida=="zumo piña"){document.write(dinero-1.8);}; 
-                            </script></td>
+                            <td>
+                                <script>document.write(bebida)</script>
+                            </td>
+                            <td>
+                                <script>document.write(dinero)</script>
+                            </td>
+                            <td>
+                                <script>
+                                    if (bebida == "cocacola") { document.write(dinero - 2); }
+                                    else if (bebida == "fanta") { document.write(dinero - 1.5); }
+                                    else if (bebida == "agua") { document.write(dinero - 1); }
+                                    else if (bebida == "nestea") { document.write(dinero - 2); }
+                                    else if (bebida == "calsberg") { document.write(dinero - 2.5); }
+                                    else if (bebida == "zumo melocoton") { document.write(dinero - 1.8); }
+                                    else if (bebida == "zumo piña") { document.write(dinero - 1.8); }; 
+                                </script>
+                            </td>
                         </tr>
                     </table>
-            </table>
-        </article>
-    </section>    
+                </table>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <h2>Lugar para la publicidad o link a redes</h2>
+        <p>Insertar aqui la publicidad deseada.</p>
+    </aside>
     <footer>
         <h2>Pie de pagina.</h2>
         <p>Creado por Raimond Andrei Iuhasz en clase de Cliente.</p>
     </footer>
-        
-    
-    
-    
+
 </body>
+ <script src="../js/JQuery.js"></script>
 </html>

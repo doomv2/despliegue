@@ -9,57 +9,146 @@
  
 </head>
 <body>     
-    <header>
-        <h1>Clases de APP Cliente</h1>
-        <h2>Raymond Andrei Iuhasz</h2>
-    </header>
-    <section>
-        <h2>Numero Aleatorio</h2>
-        <article>
-            <script>
-                var numIntento=[];
-                var cont=["primera","segunda","tercera","cuarta","quinta","sexta","septima","octava","novena","decima"];
-                var cont2=["Primer","Segundo","Tercer","Cuarto","Quinto","Sexto","Septimo","Octavo","Noveno","Decimo"]
-                var aleatorio= Math.round(Math.random()*9+1);
-                var intentos=0;
-                var num=prompt("introduce tu numero");
-                numIntento.push(num);
-                do{            
+        <header>
+                <img />
+                <h1>Clases de APP Cliente</h1>
+                <h2>Raymond Andrei Iuhasz</h2>
+                <nav>
+                    <ul class="main first">
+                        <li>
+                            <a href="">JavaScript</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="refrescos.html">Maquina de refrescos</a>
+                                </li>
+                                <li>
+                                    <a href="numAleatorio.html">Numeros Aleatorios</a>
+                                </li>
+                                <li>
+                                    <a href="">Usuarios switch/case</a>
+                                </li>
+                                <li>
+                                    <a href="caclucaldora.html">Calculadora</a>
+                                </li>
+                                <li>
+                                    <a href="">Eventos Javascript</a>
+                                </li>
+                                <li>
+                                    <a href="">Eventos Predefinidos</a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="">Ejercicio 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Ejercicio 2</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="main">
+                        <li>
+                            <a href="">CSS</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="cssLectura.html">CSS Lectura</a>
+                                </li>
+                                <li>
+                                    <a href="cssEstilos.html">CSS Estilos</a>
+                                </li>
+                            </ul>
+                        </li>
+        
+        
+                    </ul>
+                    <ul class="main last">
+                        <li>
+                            <a href="">JQuery</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="fotos.html">Imagenes</a>
+                                </li>
+                                <li>
+                                    <a href="juegoNum.html">Click Tester</a>                            
+                                </li>
+                                <li>
+                                    <a href="">Tienda 1 Css</a>                         
+                                </li>
+                                <li>
+                                    <a href="">Tienda 2</a>
+                                </li>
+                                <li>
+                                    <a href="">Eventos Raton/Teclado</a>
+                                    <ul class="submenu">
+                                            <li>
+                                                <a href="EventosRatonTeclado.html">Ejercicio 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="EventosRatonTecladoZoom.html">Ejercicio 2</a>
+                                            </li>
+                                        </ul>
+                                </li>
+                                <li>
+                                    <a href="">Zoom</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+              <!--<img  id="follen"src="../imgs/Follen.jpg">-->  
+              <section>
+                    <h2>Numero Aleatorio</h2>
+                    <article>
+                        <script>
+                            var numIntento=[];
+                            var cont=["primera","segunda","tercera","cuarta","quinta","sexta","septima","octava","novena","decima"];
+                            var cont2=["Primer","Segundo","Tercer","Cuarto","Quinto","Sexto","Septimo","Octavo","Noveno","Decimo"]
+                            var aleatorio= Math.round(Math.random()*9+1);
+                            var intentos=0;
+                            var num=prompt("introduce tu numero");
+                            numIntento.push(num);
+                            do{            
+                                
+                                if(num==aleatorio){
+                                    
+                                }
+                                else if(num<aleatorio){
+                                    document.write("Has introducido el "+num+" el numero que buscas es mas grande introduce otro<br> ");
+                                    document.write(cont2[intentos]+" intento has escrito "+numIntento[intentos]+"<br>");
                     
-                    if(num==aleatorio){
-                        
-                    }
-                    else if(num<aleatorio){
-                        document.write("Has introducido el "+num+" el numero que buscas es mas grande introduce otro<br> ");
-                        document.write(cont2[intentos]+" intento has escrito "+numIntento[intentos]+"<br>");
-        
-                        num=prompt("El numero es mas grande introduce otro.");
-                        numIntento.push(num);
-                        intentos++;
-                    }
-                    else if(num>aleatorio){
-                        document.write(cont2[intentos]+" intento has escrito "+numIntento[intentos]+"<br>");
-        
-                        document.write("Has introducido el "+num+" el numero que buscas es mas pequeño introduce otro<br> ");
-                        num=prompt("el numero es mas pequeño");
-                        numIntento.push(num);
-                        intentos++;
-                    }
-                        
-                }while(num!=aleatorio);       
-                alert("Enhorabuena lo has conseguido a la "+cont[intentos]);
-                document.write("Enhorabuena lo has conseguido a la "+cont[intentos]+". El numero era "+aleatorio+"<br>");
-                for(var x=0;x<numIntento.length;x++){
-                   // document.write(cont2[x]+" intento has escrito "+numIntento[x]+"<br>");
-                }
-            </script>
-    </section>    
-    <footer>
-        <h2>Pie de pagina.</h2>
-        <p>Creado por Raimond Andrei Iuhasz en clase de Cliente.</p>
-    </footer>
-        
-    
+                                    num=prompt("El numero es mas grande introduce otro.");
+                                    numIntento.push(num);
+                                    intentos++;
+                                }
+                                else if(num>aleatorio){
+                                    document.write(cont2[intentos]+" intento has escrito "+numIntento[intentos]+"<br>");
+                    
+                                    document.write("Has introducido el "+num+" el numero que buscas es mas pequeño introduce otro<br> ");
+                                    num=prompt("el numero es mas pequeño");
+                                    numIntento.push(num);
+                                    intentos++;
+                                }
+                                    
+                            }while(num!=aleatorio);       
+                            alert("Enhorabuena lo has conseguido a la "+cont[intentos]);
+                            document.write("Enhorabuena lo has conseguido a la "+cont[intentos]+". El numero era "+aleatorio+"<br>");
+                            for(var x=0;x<numIntento.length;x++){
+                               // document.write(cont2[x]+" intento has escrito "+numIntento[x]+"<br>");
+                            }
+                        </script>
+                </section>    
+            </main>
+            <aside>
+                <h2>Lugar para la publicidad o link a redes</h2>
+                <p>Insertar aqui la publicidad deseada.</p>
+            </aside>
+            <footer>
+                <h2>Pie de pagina.</h2>
+                <p>Creado por Raimond Andrei Iuhasz en clase de Cliente.</p>
+            </footer>
     
     
 </body>

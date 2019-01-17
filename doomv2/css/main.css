@@ -1,8 +1,8 @@
 body {
   background-color: rgb(48, 43, 53);
   display: grid;
-  grid-template-rows: 150px auto 100px;
-  grid-template-columns: auto 80px;
+  grid-template-rows: 150px auto 80px;
+  grid-template-columns: auto auto;
   grid-gap: 1rem;
   grid-template-areas:
     "header header"
@@ -37,6 +37,12 @@ li {
 .last li{
     border-bottom-right-radius:100px;
 }
+.first li:hover{
+  border-bottom-left-radius: 0px;
+}
+.last li:hover{
+  border-bottom-right-radius:0px;
+}
 li a {
   width: 200px;
   color: white;
@@ -56,12 +62,20 @@ li ul {
   clear: both;
 }
 nav{
+    position: absolute;
     margin-left:31%;   
 }
 main {
   grid-area: main;
   max-width: 800px;
   margin: auto;
+}
+img{
+  width: 80px;
+}
+#follen{
+  padding-top: 30px;
+  width: 800px;
 }
 aside {
   grid-area: aside;

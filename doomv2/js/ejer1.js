@@ -16,8 +16,8 @@
   document.getElementById("clientey").innerHTML=coordenadaCY;
   document.getElementById("paginax").innerHTML=coordenadaPX;
   document.getElementById("paginay").innerHTML=coordenadaPY; 
-  document.getElementById("iTecla").style.backgroundColor="white";
-  document.getElementById("iRaton").style.backgroundColor="white";
+  document.getElementById("iTecla").style.backgroundColor="rgba(48, 43, 53, 0.5)";
+  document.getElementById("iRaton").style.backgroundColor="rgba(48, 43, 53, 0.5)";
 }
  function muestraInformacionTeclado(elEvento){        
    var evento = elEvento || window.event;
