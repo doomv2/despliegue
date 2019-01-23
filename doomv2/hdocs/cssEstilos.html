@@ -103,30 +103,45 @@
     </header>
     <main>
         <!--<img  id="follen"src="../imgs/Follen.jpg">-->
-        <table>
+        <table id="tabla1">
             <tr>
-                <td >
-                    <div id="texto1">Esto es un texto de prueba y cada uno corresponde a distintos bloques Este
-                        corresponde al bloque 1</div>
-                        <input type="button" class="zoomIn" value="Aumentar" >
-                        <input type="button" class="zoomOut" value="Disminuir">
-                </td>
-                <td >
-                    <div id="texto2">Esto es un texto de prueba y cada uno corresponde a distintos bloques Este
-                        corresponde al bloque 2</div>
-                        <input type="button" class="zoomIn" value="Aumentar" >
-                        <input type="button" class="zoomOut" value="Disminuir" >
-                </td>
-                <td >
-                    <div id="texto3">Esto es un texto de prueba y cada uno corresponde a distintos bloques Este
-                        corresponde al bloque 3</div>
-                        <input type="button" class="zoomIn" value="Aumentar" >
-                        <input type="button" class="zoomOut" value="Disminuir">
-                    </td>
+                <td id="Cosatexto1">
+                    texto Num 1
                 </td>
             </tr>
-            
+            <tr>
+                <td>
+                    <input type="button" value="Aumentar" id="texto1" class="zoomIn">
+                    <input type="button" value="Disminuir" id="texto1" class="zoomOut">
+                </td>
+            </tr>
         </table>
+        <table id="tabla2">
+                <tr>
+                    <td id="Cosatexto2">
+                        texto Num 2
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="Aumentar" id="texto2" class="zoomIn">
+                        <input type="button" value="Disminuir" id="texto2" class="zoomOut">
+                    </td>
+                </tr>
+            </table>
+            <table id="tabla3">
+                    <tr>
+                        <td id="Cosatexto3">
+                            texto Num 3
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" value="Aumentar" id="texto3" class="zoomIn">
+                            <input type="button" value="Disminuir" id="texto3" class="zoomOut">
+                        </td>
+                    </tr>
+                </table>
     </main>
     <aside>
         <h2>Lugar para la publicidad o link a redes</h2>
@@ -139,8 +154,8 @@
 
 
 </body>
+<script src="../js/JQuery.js"></script>
 
 <script src="../js/jTexto.js"></script>
-<script src="../js/JQuery.js"></script>
 
 </html>
