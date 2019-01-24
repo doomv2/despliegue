@@ -16,4 +16,5 @@ function zoomInf(e){
 function zoomOutf(e){
     var texto=e.target.id;
     $("#Cosa"+texto).css("font-size",(parseFloat($("#Cosa"+texto).css("font-size"))-10));
+    
 }

@@ -2,8 +2,8 @@ body {
   background-color: rgb(48, 43, 53);
   display: grid;
   grid-template-rows: 150px auto 80px;
-  grid-template-columns: auto auto;
-  grid-gap: 1rem;
+  grid-template-columns: 1450px auto;
+  grid-gap: 0;
   grid-template-areas:
     "header header"
     "main aside"
@@ -17,7 +17,6 @@ header {
 }
 
 ul { 
-  width: 200px;
   display: inline;
   list-style-type: none;  
   padding: 0px;
@@ -96,7 +95,8 @@ footer {
   background-color: rgb(83, 80, 80);
 }
 #calculadora{
-  text-align:   width: 100%;;
+  text-align:  left;
+   width: 100%;;
   width: 150px;
   height: 140px;
 }
