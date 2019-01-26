@@ -6,32 +6,32 @@ $(document).ready(function(){
 })
 function noticiaB(){
     $(".button .N").css({
-        "color": "white", 
+        "color": "rgb(56, 50, 61)", 
         "background-color":"black"
     });
     $(".button .V").css({
         "color": "black", 
-        "background-color":"white"
+        "background-color":"rgb(56, 50, 61)"
     });
 }
 function videoB(){
     $(".button .V").css({
-        "color": "white", 
+        "color": "rgb(56, 50, 61)", 
         "background-color":"black"
     });
     $(".button .N").css({
         "color": "black", 
-        "background-color":"white"
+        "background-color":"rgb(56, 50, 61)"
     });
 }
 function noticiaC(){    
     if($("#newsC").is(':checked')){
     $(".check .N").css({
-        "color": "white", 
+        "color": "rgb(56, 50, 61)", 
         "background-color":"black"
     });}else{$(".check .N").css({
         "color": "black", 
-        "background-color":"white"
+        "background-color":"rgb(56, 50, 61)"
     });
         
     }
@@ -39,11 +39,11 @@ function noticiaC(){
 function videoC(){
     if($("#vidC").is(':checked')){
         $(".check .V").css({
-            "color": "white", 
+            "color": "rgb(56, 50, 61)", 
             "background-color":"black"
         });}else{$(".check .V").css({
             "color": "black", 
-            "background-color":"white"
+            "background-color":"rgb(56, 50, 61)"
         });
             
         }

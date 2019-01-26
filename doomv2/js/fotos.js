@@ -13,10 +13,10 @@ for( var i=0; i< boton.length; i++){
 })
 
 function aNegro(e){
-    $(this).attr("src","FotosBN/"+e.target.id+".png")
+    $(this).attr("src","../imgs/FotosBN/"+e.target.id+".png")
 }
 function aColor(e){
-    $(this).attr("src","Fotos/"+e.target.id+".png")
+    $(this).attr("src","../imgs/Fotos/"+e.target.id+".png")
 }
 var i = 0;
 function show(e){ 
