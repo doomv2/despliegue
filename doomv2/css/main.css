@@ -1,0 +1,66 @@
+body{
+    color: white;
+    width: auto;
+    background-image: url("../imgs/fondo2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 100px auto auto 100px;
+    grid-template-columns: auto auto 150px;
+    grid-template-areas: 
+    "hd hd hd"
+    "ct ct sd"
+    "ct ct sd"
+    "ft ft ft";
+}
+img{
+    max-width: 150px;
+}
+header{
+    grid-area: hd;
+    background-color:rgba(135, 135, 135, 0.5);
+    border-radius: 15px;
+    padding: 5px 30px 5px 30px;
+
+}
+main{
+    text-align: center;
+    grid-area: ct;
+}
+section{
+    background-color:rgba(135, 135, 135, 0.5);
+    width: min-content      ;
+    overflow-y: auto;
+    margin-left: 15px;
+    margin-top: 25px;
+    padding: 30px 30px 30px 30px;
+    border-radius: 15px;
+    float: left; 
+}
+a { 
+    color:  rgb(105, 15, 15);    
+}
+a:hover{
+    color: white;
+}
+a:visited{
+    text-decoration: none;
+}
+aside{
+    grid-area: sd;
+    background-color:rgba(135, 135, 135, 0.5);
+    margin-left: 25px;
+    margin-top: 25px;
+    border-radius: 15px;    
+    border-right: 30px;
+  
+}
+
+footer{
+    grid-area: ft;
+    background-color:rgba(135, 135, 135, 0.5);
+    border-radius: 15px;
+
+
+}
