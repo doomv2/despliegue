@@ -108,23 +108,26 @@
     </header>
     <main>
         <h3>Informacion de contacto</h3>
-        <form action="" method="POST">
-            Nombre*: <input type="text" Name="Nombre" id="nombre" placeholder="Obligatirio"><br>
+        <form action="" method="POST" id="formulario">
+            Nombre*: <input type="text" Name="Nombre" id="nombre" class="required" placeholder="Obligatirio"><br>
             Edad: <input type="text" Name="Edad" id="Edad"><br>
-            Dni: <input type="text" Name="numDni" id="numDni"> -- <input type="text" Name="letraDni" id="letraDni">
-            Direccion*: <input type="text" Name="Direccion" id="Direccion" placeholder="Obligatorio"><br>
+            Dni: <input type="text" Name="numDni" id="numDni"> -- <input type="text" Name="letraDni" id="letraDni"><br>
+            Direccion*: <input type="text" Name="Direccion" id="Direccion"  class="required"  placeholder="Obligatorio"><br>
             Selecciona Provincia:
-            <select id="Provincia" name="Provincia">
+            <select id="provincia" name="Provincia">
+                <option value="Provincia">Provincia</option>
                 <option value="Valencia">Valencia</option>
                 <option value="Castellon">Castellon</option>
                 <option value="Alicante">Alicante</option>
             </select><br>
             Localidad:
-            <select id="Localidad" name="Localidad" ></select><br>
-            Codigo Postal*: <input type="text" name="cp" id="cp"><br>
+            <select id="localidad" name="Localidad" disabled></select><br>
+            Codigo Postal*: <input type="text" name="cp" id="cp"  class="required"  placeholder="Obligatorio"><br>
             Telefono de contacto:  <input type="text" name="Telefono" id="Telefono"><br>
           Correo electronico  <input type="text" name="Correo" id="Correo"><br>
             Repita su correo electronico  <input type="text" name="Correo2" id="Correo2"><br>
+            <p>(*) Datos Obligatirios</p>
+            <input type="submit" value="Enviar los Datos"><input type="reset" value="Emprezar de nuevo">
         </form>
     </main>
     <aside>
@@ -138,5 +141,5 @@
 
 </body>
 <script src="../js/JQuery.js"></script>
-
+<script src="../js/formulario.js"></script>
 </html>
