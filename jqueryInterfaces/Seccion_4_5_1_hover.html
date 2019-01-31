@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>jQuery Menu</title>
+		<style>
+		  	ul { margin-left:20px; color:blue; }
+		  	li[id]:hover {
+                cursor:pointer;
+                /*color:red; con solo esta opción nos ahorramos el tener que cambiar el color por jQuery */
+            }
+			ul#opcio_loc, ul#opcio_plat { display:none;}
+		</style>
+	</head>
+	<body>
+	   <ul>
+	   	<li id="localitzacio">Location
+		   	 <ul id="opcio_loc"> 
+					<li>Map</li>
+				   <li>Address</li>
+				   <li>Telephone</li>
+				</ul>
+			</li>
+	   	<li id="receptes">Recipies
+	   		<ul id="opcio_plat"> 
+					<li>All i pebre</li>
+				   <li>Arròs del senyoret</li>
+				   <li>Fideuada</li>
+				</ul>
+			</li>
+	  	</ul>
+	  	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	  	<script type="text/javascript" src="jquery-ui-1.12.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				//type here your code
+			});
+		</script>
+	</body>
+</html>

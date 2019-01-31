@@ -33,9 +33,7 @@ $(function () {
             $("#localidad").append("<option class='localidad'>Localidad</option>");
         }
     });
-});
 
-/*
     var posicion = document.getElementById("localidad");
     var opcion = document.createElement("option");
     opcion.text = "Requena";
@@ -88,31 +86,6 @@ $(function () {
             return false;
         }
     });
-});
 
-
-
-/*
-
-$(document).ready(function(){
-    var form = document.getElementById("formulario");
-    form.addEventListener("submit",function(event){
-        if(checkForm(form)){
-            form.submit();
-        }
-        else{
-            event.preventDefault();
-        }
-
-    });
 
 });
-function checkForm(form){
-    form.find("#nombre").blur(function (){
-        alert("bu");
-        if (this.val()=""){
-            this.css("border-color","red");
-        }
-    });
-
-};*/
