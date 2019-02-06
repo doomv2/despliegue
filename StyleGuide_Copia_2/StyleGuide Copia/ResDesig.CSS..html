@@ -1,90 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
-   <head>
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>StyleGuide</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" media="screen" href="index.2.css" />
-      <script src="main.js"></script>
-   </head>
-   <!-- Body -->
-   <body>
-      <!-- Container -->
-      <div class="container">
-         <!-- Header -->
-         <header>
-            <div class="logo"><a href="index.html"><img src="Imagenes/LOGO_PNG.png" alt="LOGO" height="100"></a></div>
-            <div class="home">Web Application Design</div>
-            <div class="title">CSS</div>
-         </header>
-         <!-- Nav -->
-         <nav>
-            <label for="show-menu" class="show-menu"><img src="burger_icon.png" alt="BURGER_ICON" width="20"></label>
-            <input type="checkbox" id="show-menu" role="button">
-            <ul id="menu">
+
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>StyleGuide</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" media="screen" href="index.2.css" />
+   <script src="main.js"></script>
+</head>
+
+<!-- Body -->
+<body>
+   <!-- Container -->
+   <div class="container">
+      <!-- Header -->
+      <header>
+         <div class="logo"><a href="index.html"><img src="Imagenes/LOGO_PNG.png" alt="LOGO" height="100"></a></div>
+         <div class="home">Web Application Design</div>
+         <div class="title">CSS</div>
+      </header>
+      <!-- Nav -->
+      <nav>
+         <!-- Burguer Menu -->
+         <label for="show-menu" class="show-menu"><img src="burger_icon.png" alt="BURGER_ICON" width="20"></label>
+         <input type="checkbox" id="show-menu" role="button">
+         <!-- Menu -->
+         <ul id="menu">
+            <li>
+               <a href="index.1.HTML.html">HTML</a>
+            </li>
+            <li>
+               <a href="index.1.CSS.html">CSS</a>
+            </li>
+         </ul>
+         <!-- Search -->
+         <input type="text" placeholder="Search" class="search">
+      </nav>
+      <!-- View1 -->
+      <div class="view1">
+         <aside>
+            <ul>
                <li>
-                  <a href="index.1.HTML.html">HTML</a>
-               </li>
-               <li>
-                  <a href="index.1.CSS.html">CSS</a>
+                  <a href="boxmodel.CSS.html">Box Model</a>
                </li>
             </ul>
-            <!-- Search -->
-            <input type="text" placeholder="Search" class="search">
-         </nav>
-         <div class="view1">
-            <aside>
-               <ul>
-                  <li>
-                     <a href="boxmodel.CSS.html">Box Model</a>                
-                  </li>
-               </ul>
-               <ul>
-                  <li>
-                     Grid Layout
-                     <ul>
-                        <li>
-                           <a href="InitResDesig.CSS.html">
-                              Introduccion
-                        </li>
-                        <li><a href="ResDesig.CSS..html"> Responsive design</a></li>
-                     </ul>
-                  </li>
-               </ul>
-            </aside>
-            <main>
-               <article>
-                  <h2 class="titulo">Responsive Design</h2>
-                  <p>
-                     Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink,
-                     or enlarge, a website, to make it look good on all devices (Mobile, Tablets, and Computers):
-                  </p>
-                  <img src="Imagenes/responsive.PNG" alt="ResDesig">
-                  <p>This is the mobile layout:<br></p>
-                  <img src="imagenes/MobileResponsive.PNG" alt="MobileResponsive" class="codigo">
-                  <p>
-                     After setting up a mobile layout we will get this single column at all screen sizes, 
-                     we can now add a media query and redefine our layout for the circumstance of having 
-                     enough screen real estate to show two columns.
-                  </p>
-                  <img src="Imagenes/TabletResponsive.PNG" alt="TabletResponsive" class="codigo">
-                  <p>
-                     You can see the layout taking shape in the value of grid-template-areas. 
-                     The headerspans over two column tracks, as does the nav. In the third row 
-                     track we have the sidebaralongside the content. In the fourth row track 
-                     I have chosen to place my ad content – so it appears under the sidebar, 
-                     then the footer next to it under the content. 
-                     I’m using a flexbox on the navigation to display it in a row spaced out.
-                     I can now add a final breakpoint to move to a three-column layout.                        
-                  </p>
-                  <img src="Imagenes/pcResponsive.PNG" alt="pcResponsive" class="codigo">
-               </article>
-            </main>
-         </div>
-         <div class="coment">
-            Coment:<input type="text" placeholder="Coment">
-         </div>
+            <ul>
+               <li>
+                  Grid Layout
+                  <ul>
+                     <li>
+                        <a href="InitResDesig.CSS.html">
+                           Introduccion
+                           </a>
+                     </li>
+                     <li><a href="ResDesig.CSS..html"> Responsive design</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </aside>
+         <!-- Main -->
+         <main>
+            <article>
+               <h2 class="titulo">Responsive Design</h2>
+               <p>
+                  Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink,
+                  or enlarge, a website, to make it look good on all devices (Mobile, Tablets, and Computers):
+               </p>
+               <img src="Imagenes/responsive.PNG" alt="ResDesig">
+               <p>This is the mobile layout:<br></p>
+               <img src="imagenes/MobileResponsive.PNG" alt="MobileResponsive" class="codigo">
+               <p>
+                  After setting up a mobile layout we will get this single column at all screen sizes,
+                  we can now add a media query and redefine our layout for the circumstance of having
+                  enough screen real estate to show two columns.
+               </p>
+               <img src="Imagenes/TabletResponsive.PNG" alt="TabletResponsive" class="codigo">
+               <p>
+                  You can see the layout taking shape in the value of grid-template-areas.
+                  The headerspans over two column tracks, as does the nav. In the third row
+                  track we have the sidebaralongside the content. In the fourth row track
+                  I have chosen to place my ad content – so it appears under the sidebar,
+                  then the footer next to it under the content.
+                  I’m using a flexbox on the navigation to display it in a row spaced out.
+                  I can now add a final breakpoint to move to a three-column layout.
+               </p>
+               <img src="Imagenes/pcResponsive.PNG" alt="pcResponsive" class="codigo">
+            </article>
+         </main>
       </div>
-   </body>
+      <!-- Comment -->
+      <div class="coment">
+         Coment:<input type="text" placeholder="Coment">
+      </div>
+   </div>
+</body>
 </html>

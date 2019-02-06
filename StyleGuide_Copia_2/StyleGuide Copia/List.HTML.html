@@ -1,217 +1,211 @@
 <!DOCTYPE html>
-<html lang="es">
-   <head>
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>StyleGuide</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" media="screen" href="index.2.css" />
-      <script src="main.js"></script>
-   </head>
-   <!-- Body -->
-   <body>
-      <!-- Container -->
-      <div class="container">
-         <!-- Header -->
-         <header>
-            <div class="logo"><a href="index.html"><img src="Imagenes/LOGO_PNG.png" alt="LOGO" height="100"></a></div>
-            <div class="home">Web Application Design</div>
-            <div class="title">HTML</div>
-         </header>
-         <!-- Nav -->
-         <nav>
-            <label for="show-menu" class="show-menu"><img src="burger_icon.png" alt="BURGER_ICON" width="20"></label>
-            <input type="checkbox" id="show-menu" role="button">
-            <ul id="menu">
+<html lang="en">
+
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>StyleGuide</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" media="screen" href="index.2.css" />
+   <script src="main.js"></script>
+</head>
+
+<!-- Body -->
+<body>
+   <!-- Container -->
+   <div class="container">
+      <!-- Header -->
+      <header>
+         <div class="logo"><a href="index.html"><img src="Imagenes/LOGO_PNG.png" alt="LOGO" height="100"></a></div>
+         <div class="home">Web Application Design</div>
+         <div class="title">HTML</div>
+      </header>
+      <!-- Nav -->
+      <nav>
+         <!-- Burguer Menu -->
+         <label for="show-menu" class="show-menu"><img src="burger_icon.png" alt="BURGER_ICON" width="20"></label>
+         <input type="checkbox" id="show-menu" role="button">
+         <!-- Menu -->
+         <ul id="menu">
+            <li>
+               <a href="index.1.HTML.html">HTML</a>
+            </li>
+            <li>
+               <a href="index.1.CSS.html">CSS</a>
+            </li>
+         </ul>
+         <!-- Search -->
+         <input type="text" placeholder="Search" class="search">
+      </nav>
+      <!-- View1 -->
+      <div class="view1">
+         <!-- Aside -->
+         <aside>
+            <ul>
                <li>
-                  <a href="index.1.HTML.html">HTML</a>
-               </li>
-               <li>
-                  <a href="index.1.CSS.html">CSS</a>
+                  <a href="List.HTML.html">List</a>
                </li>
             </ul>
-            <!-- Search -->
-            <input type="text" placeholder="Search" class="search">
-         </nav>
-         <div class="view1">
-            <aside>
-               <ul>
-                  <li>
-                     <a href="List.HTML.html">List</a>                
-                  </li>
-               </ul>
-               <ul>
-                  <li>
-                     <a href="Form.HTML.html">Formularios</a>                
-                  </li>
-               </ul>
-            </aside>
-            <main>
-               <article>
-                <h2 class="titulo">LIST</h2>
-                <table>
-                    <tr>
-                        <td>
-                            <h3>Unordered List</h3>
-                            <p>
-                                <ul>
-                                <li>Coffe</li>
-                                <li>Tea</li>
-                                <li>Coca Cola</li>
-                                <li>Coffe</li>
-                                <li>Tea</li>
-                                <li>Coca Cola</li>
-                                </ul>
-                            </p>
-                        </td>
-                        <td>
-                                <h3>Ordered List</h3>
-                                <p>
-                                    <ol>
-                                    <li>Coffe</li>
-                                    <li>Tea</li>
-                                    <li>Coca Cola</li>
-                                    <li>Coffe</li>
-                                    <li>Tea</li>
-                                    <li>Coca Cola</li>
-                                    </ol>
-                                </p>
-                            </td>
-                    </tr>
-                </table>
-                <h3>
-                   <p>HTML Lists and CSS List Properties</p>
+            <ul>
+               <li>
+                  <a href="Form.HTML.html">Formularios</a>
+               </li>
+            </ul>
+         </aside>
+         <!-- Main -->
+         <main>
+            <article>
+               <h2 class="titulo">LIST</h2>
+               <table>
+                  <tr>
+                     <td>
+                        <h3>Unordered List</h3>
+                           <ul>
+                              <li>Coffe</li>
+                              <li>Tea</li>
+                              <li>Coca Cola</li>
+                              <li>Coffe</li>
+                              <li>Tea</li>
+                              <li>Coca Cola</li>
+                           </ul>
+                     </td>
+                     <td>
+                        <h3>Ordered List</h3>
+                           <ol>
+                              <li>Coffe</li>
+                              <li>Tea</li>
+                              <li>Coca Cola</li>
+                              <li>Coffe</li>
+                              <li>Tea</li>
+                              <li>Coca Cola</li>
+                           </ol>
+                     </td>
+                  </tr>
+               </table>
+               <h3 class="identation">
+                  HTML Lists and CSS List Properties
                </h3>
                <p>In HTML, there are two main types of lists:</p>
-                  <ul>
-                     <li>
-                        <p>unordered lists (&lt;ul&gt;) - the list items are marked with bullets</p>
-                     </li>
-                     <li>
-                           <p>lists (&lt;ol&gt;) - the list items are marked with numbers or letters</p> 
-                     </li>
-                  </ul>
-                  <p>The CSS list properties allow you to:</p>
-                  <ul>
-                     <li>
-                        <p>
-                              Set different list item markers for ordered lists
-                        </p>
-                     </li>
-                     <li>
-                        <p>
-                              Set different list item markers for unordered lists
-                        </p>
-                     </li>
-                     <li>
-                        <p>
-                              Set an image as the list item marker  
-                        </p>
-                     </li>
-                     <li>
-                        <p>
-                              Add background colors to lists and list ítems         
-                        </p>
-                     </li>
-                  </ul>
-                  <h3>
-                        <p>
-                           Different List Item Markers
-                        </p>
-                  </h3>
-                  <p>
-                     The <b>list-style-type</b>  property specifies the type of list item marker.
-                  </p>
-                  <h3>
-                        <p>
-                              An Image as The List Item Marker
-                        </p>
-                  </h3>
-                  <p>
-                        The <b>list-style-image</b>  property specifies an image as the list item marker.
-                  </p>
-                  <h3>
-                        <p>
-                              Position The List Item Markers
-                        </p>
-                  </h3>
-                  <p>
-                        The <b>list-style-position</b>  property specifies the position of the list-item markers (bullet points).
-                  </p>
-                  <p>
-                     <b>list-style-position: outside;</b> means that the bullet points will be outside the list item. The start of each line of a list item will be aligned vertically. This is default:
-                  </p>
-                  <img src="imagenes/list1.png" alt="list1" class="codigo">
-                  <p>
-                     <b>list-style-position: inside;</b> means that the bullet points will be inside the list item. As it is part of the list item, it will be part of the text and push the text at the start:
-                  </p>
-                  <img src="imagenes/list2.png" alt="list2" class="codigo">
-                  <h3>
-                        <p>
-                              Remove Default Settings
-                        </p>
-                  </h3>
-                  <p>
-                        The <b>list-style-type:none</b>  property can also be used to remove the markers/bullets.
-                         Note that the list also has default margin and padding. 
-                         <br>To remove this, add <b>margin:0; </b> and <b>padding:0; </b> to &lt;ul&gt; or &lt;ol&gt;.
-                  </p>
-                  <h3>
-                        <p>
-                              List - Shorthand property
-                        </p>
-                  </h3>
-                  <p>
-                        The <b>list-style</b> property is a shorthand property. It is used to set all the list properties 
-                        in one declaration.
-                  </p>
-                  <p>
-                        When using the shorthand property, the order of the property values are:
-                  </p>
-                  <ul>
-                     <li>
-                        <p>
-                           <b>list-style-type</b> if a list-style-image is specified, 
-                           the value of this property will be displayed if the image 
-                           for some reason cannot be displayed
-                        </p>
-                     </li>
-                     <li>
-                        <p>
-                           <b>list-style-position</b> specifies whether the 
-                           list-item markers should appear 
-                           inside or outside the content flow
-                        </p>
-                     </li>
-                     <li>
-                        <p>
-                           <b>list-style-image</b> specifies an image as the list item marker
-                        </p>
-                     </li>
-                  </ul>
-                  <p>
-                     If one of the property values above are missing, the default value for the missing property will be inserted, if any.
-                  </p>
-                  <h3>
-                        Styling List With Colors
-                  </h3>
-                  <p>
-                        We can also style lists with colors, to make them look a little more interesting.
-                  </p>
-                  <p>
-                        Anything added to the &lt;ol&gt; or &lt;ul&gt; tag, affects the entire list, while properties added to the &lt;li&gt; tag will affect the individual list ítems.
-                  </p>
-
-
-               
-                
-
-                </article>
-            </main>
-         </div>
-         <div class="coment">
-            Coment:<input type="text" placeholder="Coment">
-         </div>
+               <ul>
+                  <li>
+                     <p>unordered lists (&lt;ul&gt;) - the list items are marked with bullets</p>
+                  </li>
+                  <li>
+                     <p>lists (&lt;ol&gt;) - the list items are marked with numbers or letters</p>
+                  </li>
+               </ul>
+               <p>The CSS list properties allow you to:</p>
+               <ul>
+                  <li>
+                     <p>
+                        Set different list item markers for ordered lists
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        Set different list item markers for unordered lists
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        Set an image as the list item marker
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        Add background colors to lists and list ítems
+                     </p>
+                  </li>
+               </ul>
+               <h3 class="identation">
+                     Different List Item Markers
+               </h3>
+               <p>
+                  The <b>list-style-type</b> property specifies the type of list item marker.
+               </p>
+               <h3 class="identation">
+                     An Image as The List Item Marker
+               </h3>
+               <p>
+                  The <b>list-style-image</b> property specifies an image as the list item marker.
+               </p>
+               <h3 class="identation">
+                     Position The List Item Markers
+               </h3>
+               <p>
+                  The <b>list-style-position</b> property specifies the position of the list-item markers (bullet
+                  points).
+               </p>
+               <p>
+                  <b>list-style-position: outside;</b> means that the bullet points will be outside the list item. The
+                  start of each line of a list item will be aligned vertically. This is default:
+               </p>
+               <img src="imagenes/list1.png" alt="list1" class="codigo">
+               <p>
+                  <b>list-style-position: inside;</b> means that the bullet points will be inside the list item. As it
+                  is part of the list item, it will be part of the text and push the text at the start:
+               </p>
+               <img src="imagenes/list2.png" alt="list2" class="codigo">
+               <h3 class="identation">
+                     Remove Default Settings
+               </h3>
+               <p>
+                  The <b>list-style-type:none</b> property can also be used to remove the markers/bullets.
+                  Note that the list also has default margin and padding.
+                  <br>To remove this, add <b>margin:0; </b> and <b>padding:0; </b> to &lt;ul&gt; or &lt;ol&gt;.
+               </p>
+               <h3 class="identation">
+                     List - Shorthand property
+               </h3>
+               <p>
+                  The <b>list-style</b> property is a shorthand property. It is used to set all the list properties
+                  in one declaration.
+               </p>
+               <p>
+                  When using the shorthand property, the order of the property values are:
+               </p>
+               <ul>
+                  <li>
+                     <p>
+                        <b>list-style-type</b> if a list-style-image is specified,
+                        the value of this property will be displayed if the image
+                        for some reason cannot be displayed
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <b>list-style-position</b> specifies whether the
+                        list-item markers should appear
+                        inside or outside the content flow
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <b>list-style-image</b> specifies an image as the list item marker
+                     </p>
+                  </li>
+               </ul>
+               <p>
+                  If one of the property values above are missing, the default value for the missing property will be
+                  inserted, if any.
+               </p>
+               <h3 class="identation">
+                  Styling List With Colors
+               </h3>
+               <p>
+                  We can also style lists with colors, to make them look a little more interesting.
+               </p>
+               <p>
+                  Anything added to the &lt;ol&gt; or &lt;ul&gt; tag, affects the entire list, while properties added
+                  to the &lt;li&gt; tag will affect the individual list ítems.
+               </p>
+            </article>
+         </main>
       </div>
-   </body>
+      <!-- Comment -->
+      <div class="coment">
+         Coment:<input type="text" placeholder="Coment">
+      </div>
+   </div>
+</body>
 </html>
