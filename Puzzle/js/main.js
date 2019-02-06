@@ -2,14 +2,26 @@ $(document).ready(function(){
   var gameSelector=document.querySelectorAll("#GameSelector input");
   for (var i =0; i<gameSelector.length;i++){
     gameSelector[i].addEventListener("click",startGame,false);
+    gameSelector[i].addEventListener("mouseover",showImage,false);
+    gameSelector[i].addEventListener("mouseout",quitImage,false);
   }
   
 });
+function showImage(){
+    var template= "<img  class='preview' src='../img/"+this.id+"/"+this.id+".jpg'>";
+$("#Image").append(template);
+}
+function quitImage(){
 
+    $("#Image").empty();
+}
 
 function startGame(){
     $("#Game").empty();
-    var template="<table  id='puzzle'><tr class='fila-1'><td class='fila-1 col-1'></td><td class='fila-1 col-2'></td><td class='fila-1 col-3'></td><td class='fila-1 col-4'></td></tr><tr class='fila-2'><td class='fila-2 col-1'></td><td class='fila-2 col-2'></td><td class='fila-2 col-3'></td><td class='fila-2 col-4'></td></tr><tr class='fila-3'><td class='fila-3 col-1'></td><td class=' fila-3 col-2'></td><td class='fila-3 col-3'></td><td class='fila-3 col-4'></td></tr><tr class='fila-4'><td class='fila-4 col-1'></td><td class='fila-4 col-2'></td><td class='fila-4 col-3'></td><td class='fila-4 col-4'></td></tr></table>";
+    $("#Help").empty();
+    $("#Help").append("<div onclick='showHelp()'>Help<img id='help'   class='preview' src='../img/"+this.id+"/"+this.id+".jpg'>");
+
+    var template="<table id='puzzle'><tr class='fila-1'><td class='fila-1 col-1'></td><td class='fila-1 col-2'></td><td class='fila-1 col-3'></td><td class='fila-1 col-4'></td></tr><tr class='fila-2'><td class='fila-2 col-1'></td><td class='fila-2 col-2'></td><td class='fila-2 col-3'></td><td class='fila-2 col-4'></td></tr><tr class='fila-3'><td class='fila-3 col-1'></td><td class=' fila-3 col-2'></td><td class='fila-3 col-3'></td><td class='fila-3 col-4'></td></tr><tr class='fila-4'><td class='fila-4 col-1'></td><td class='fila-4 col-2'></td><td class='fila-4 col-3'></td><td class='fila-4 col-4'></td></tr></table>";
     var game=this.id;
     console.log("Game:", game);
     /*   <table id='puzzle'>
@@ -41,6 +53,11 @@ function startGame(){
     $("#Game").append(template);
 
     fillTable(game);
+}
+function showHelp(){
+    console.log("bu");
+$("#help").css("display","block");
+$("#help").css("display","none");
 }
 
 function fillTable(game){

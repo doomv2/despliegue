@@ -1,4 +1,9 @@
 img{
     width: 95px;
-    height: 95px;
+    height: 95px;   
+}
+.preview{
+    width: 500px;
+    height: auto;
+    display: none;
 }
