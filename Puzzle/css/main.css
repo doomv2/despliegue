@@ -1,9 +1,39 @@
+main{
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto 1fr ;
+    grid-template-rows:30px auto 70px 70px auto;
+    grid-gap: 1rem;
+    grid-template-areas: 
+        "gs gs"
+        "img img"
+        "ct gm"
+        "cm gm"
+        "hp gm";
+}
 img{
     width: 95px;
-    height: 95px;   
+    height: auto;   
 }
 .preview{
     width: 500px;
     height: auto;
-    display: none;
+}
+#GameSelector{
+  grid-area: gs;
+}
+#contador{
+    grid-area: ct;
+}
+#comodines{
+    grid-area: cm;
+}
+#Game{
+    grid-area: gm;
+}
+#Help{
+    grid-area: hp;
+}
+#Image{
+  grid-area: img;
 }

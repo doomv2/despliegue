@@ -20,8 +20,8 @@
    var emptyCol= emptyClass[1].split(" ");
   emptyCol= emptyCol[0];
    var emptyFila= emptyClass[2];
-   console.log(emptyCol);
-   console.log(emptyFila);
+  // console.log(emptyCol);
+  // console.log(emptyFila);
    if((objectCol-emptyCol==1&&objectFila-emptyFila==0)||(objectCol-emptyCol==-1&&objectFila-emptyFila==0)||(objectCol-emptyCol==0&&objectFila-emptyFila==1)||(objectCol-emptyCol==0&&objectFila-emptyFila==-1))
    {return true; 
  }else{
@@ -47,14 +47,27 @@
       img.slideUp( 150 );
      // img.attr("src","../img/error.jpg");
      // $(img).attr("src",src);
-      img.slideDown( 150 )
+      img.fadeIn( 150 );
 
 
    }
  }
  function joker(){
-    alert("joker");
- }
+ if(parseInt($("#numComodin").html())>0){
+ // console.log("jokers",jokers);
+   var object=$(this);
+   var img= object.children();
+   $("#empty").append(img);
+   object.empty();
+   $("#empty").attr("id","");
+   object.attr("id","empty");
+   var jokers= $("#numComodin").html()-1;
+   $("#numComodin").html(jokers);
+   if(checkResult()){
+      showresults();
+      }
+   }
+}
 
  function checkResult(){
      var x=1;
@@ -70,10 +83,10 @@
         }
         console.log(x);
    }
-   if(x==15){return true}else{return false};
+   if(x==14){return true}else{return false};
  }
 
  function showresults(){
-    alert("enhorabuena");
+    alert("enhorabuena lo has conseguido");
 
  }
