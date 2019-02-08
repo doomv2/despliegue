@@ -65,6 +65,7 @@ nav{
     margin-left:31%;   
 }
 main {
+  padding-top: 100px;
   grid-area: main;
   max-width: 800px;
   margin: auto;
@@ -110,4 +111,9 @@ footer {
 }
 #calculadora #id_botons{
   height: 50px;
+}
+.return li{
+  margin-left: 100%;
+  border-bottom-right-radius:100px;
+  border-bottom-left-radius: 100px;
 }

@@ -17,111 +17,31 @@
         <h1>Clases de APP Cliente</h1>
         <h2>Raymond Andrei Iuhasz</h2>
         <nav>
-            <ul class="main first">
-                <li>
-                    <a href="">JavaScript</a>
-                    <ul class="submenu">
-                        <li>
-                            <a href="refrescos.html">Maquina de refrescos</a>
-                        </li>
-                        <li>
-                            <a href="numAleatorio.html">Numeros Aleatorios</a>
-                        </li>
-                        <li>
-                            <a href="usuarioSwitch.html">Usuarios switch/case</a>
-                        </li>
-                        <li>
-                            <a href="caclucaldora.html">Calculadora</a>
-                        </li>
-                        <li>
-                            <a href="eventosJavaScript.html">Eventos Javascript</a>
-                        </li>
-                        <li>
-                            <a href="">Eventos Predefinidos</a>
-                            <ul class="submenu">
-                                <li>
-                                    <a href="">Ejercicio 1</a>
-                                </li>
-                                <li>
-                                    <a href="">Ejercicio 2</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="main">
-                <li>
-                    <a href="">CSS</a>
-                    <ul class="submenu">
-                        <li>
-                            <a href="cssLectura.html">CSS Lectura</a>
-                        </li>
-                        <li>
-                            <a href="cssEstilos.html">CSS Estilos</a>
-                        </li>
-                    </ul>
-                </li>
-
-
-            </ul>
-            <ul class="main last">
-                <li>
-                    <a href="">JQuery</a>
-                    <ul class="submenu">
-                        <li>
-                            <a href="fotos.html">Imagenes</a>
-                        </li>
-                        <li>
-                            <a href="juegoNum.html">Click Tester</a>
-                        </li>
-                        <li>
-                            <a href="">Tiendas</a>
-                            <ul class="submenu">
-                                <li>
-                                    <a href="">Tienda 1 Css</a>
-                                </li>
-                                <li>
-                                    <a href="carro.html">Tienda 2</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="">Eventos Raton/Teclado</a>
-                            <ul class="submenu">
-                                <li>
-                                    <a href="EventosRatonTeclado.html">Ejercicio 1</a>
-                                </li>
-                                <li>
-                                    <a href="EventosRatonTecladoZoom.html">Ejercicio 2</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="">Zoom</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+                <ul class="return">
+                    <li>
+                        <a href="index.html">Volver</a>
+                    </li>
+                </ul>
+            </nav>
     </header>
     <main>
         <h3>Informacion de contacto</h3>
         <form action="" method="POST">
-            Nombre*: <input type="text" Name="Nombre" id="nombre" placeholder="Obligatirio"><br>
+            Nombre*: <input class="required" type="text" Name="Nombre" id="nombre" placeholder="Obligatirio"><br>
             Edad: <input type="text" Name="Edad" id="Edad"><br>
             Dni: <input type="text" Name="numDni" id="numDni"> -- <input type="text" Name="letraDni" id="letraDni">
-            Direccion*: <input type="text" Name="Direccion" id="Direccion" placeholder="Obligatorio"><br>
+            Direccion*: <input class="required" type="text" Name="Direccion" id="Direccion" placeholder="Obligatorio"><br>
             Selecciona Provincia:
-            <select id="Provincia" name="Provincia">
+            <select id="provincia" name="Provincia">
+                <option value="Provincia">Provincia</option>
                 <option value="Valencia">Valencia</option>
                 <option value="Castellon">Castellon</option>
                 <option value="Alicante">Alicante</option>
             </select><br>
             Localidad:
-            <select id="Localidad" name="Localidad" ></select><br>
-            Codigo Postal*: <input type="text" name="cp" id="cp"><br>
+            <select id="localidad" name="Localidad" >
+            </select><br>
+            Codigo Postal*: <input class="required" type="text" name="cp" id="cp"><br>
             Telefono de contacto:  <input type="text" name="Telefono" id="Telefono"><br>
           Correo electronico  <input type="text" name="Correo" id="Correo"><br>
             Repita su correo elec
@@ -138,6 +58,7 @@
     </footer>
 
 </body>
-<script src="../js/JQuery.js"></script>
+<script src="../js/formulario.js"></script>
+
 
 </html>

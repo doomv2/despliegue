@@ -1,3 +1,8 @@
+ //----- Js encargado del movimiento de las piezas
+ 
+ 
+ 
+ //------ startMovement(saber si se intenta mover o usar un comodin)
  function startMovement(){
     var td=document.querySelectorAll("#Game #puzzle td");
     //console.log("confunto img", img);
@@ -7,6 +12,9 @@
         
     }
  }
+ //----- fin startMovement
+
+ //----- moveValidator (comprobar si la imagen que queremos mover esta en la posicion correcta para que se pueda mover)
  function moveValidator(object){
    //console.log(object);
    var objectClass=object.attr("class");
@@ -28,6 +36,9 @@
     return false;
  }
 }
+//------ fin moveValidator
+
+//------ move (encargado de hacer el movimiento, en caso de imposible lo señala con un slideDown y fadeOut)
  function move(){
     //console.log("cuadrado",this);
     var object=$(this);
@@ -38,20 +49,21 @@
     $("#empty").attr("id","");
     object.attr("id","empty");
     if(checkResult()){
-      showresults();
+      showresults($("#contador"));
       }
    // console.log("clikada",img);
    // console.log("vacia",$("#empty").attr("class"));
    }else{
       var src=img.attr("src");
-      img.slideUp( 150 );
+      img.fadeOut( 150 );
      // img.attr("src","../img/error.jpg");
      // $(img).attr("src",src);
-      img.fadeIn( 150 );
-
-
+      img.slideDown( 150 );
    }
  }
+//------- fin move
+
+//------- joker (movimiento al usar comodin que se salta el moveValidator )
  function joker(){
  if(parseInt($("#numComodin").html())>0){
  // console.log("jokers",jokers);
@@ -64,11 +76,13 @@
    var jokers= $("#numComodin").html()-1;
    $("#numComodin").html(jokers);
    if(checkResult()){
-      showresults();
+      showresults($("#contador"));
       }
    }
 }
+//------- fin joker
 
+//------- checkResult (comprueba si has ordenado bien las fotos)
  function checkResult(){
      var x=1;
    var puzzle= document.querySelectorAll("#puzzle td");
@@ -83,10 +97,13 @@
         }
         console.log(x);
    }
-   if(x==14){return true}else{return false};
+   if(x==15){return true}else{return false};
  }
+//------- fin checkResult
 
- function showresults(){
-    alert("enhorabuena lo has conseguido");
-
+//------- showresults (Enseña tus resultados una vez has acabado)
+ function showresults(tiempo){
+    var chrono = tiempo.find("#minute").html()+":"+ tiempo.find("#second").html()
+    alert("enhorabuena lo has conseguido en: "+chrono);
  }
+ //------- fin showresults

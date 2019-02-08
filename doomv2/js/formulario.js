@@ -10,16 +10,16 @@ $(function () {
             $("#localidad").append("<option class='vlc'>Manises</option>");
         }
         else if ($(this).val() == "Castellon") {
-            $("#localidad .valencia").remove();
-            $("#localidad .alicante").remove();
+            $("#localidad .vlc").remove();
+            $("#localidad .alc").remove();
             $("#localidad .localidad").remove();
             $("#localidad").append("<option class='cs'>Oropesa del Mar</option>");
             $("#localidad").append("<option class='cs'>Castellon</option>");
             $("#localidad").append("<option class='cs'>Benicassim</option>");
         }
         else if ($(this).val() == "Alicante") {
-            $("#localidad .castellon").remove();
-            $("#localidad .valencia").remove();
+            $("#localidad .cs").remove();
+            $("#localidad .vlc").remove();
             $("#localidad .localidad").remove();
             $("#localidad").append("<option class='alc'>Alicante</option>");
             $("#localidad").append("<option class='alc'>Benidorm</option>");
@@ -27,9 +27,9 @@ $(function () {
         }
         else if ($(this).val() == "Provincia") {
             $("#localidad").attr("disabled", true);
-            $("#localidad .castellon").remove();
-            $("#localidad .valencia").remove();
-            $("#localidad .alicante").remove();
+            $("#localidad .cs").remove();
+            $("#localidad .vlc").remove();
+            $("#localidad .alc").remove();
             $("#localidad").append("<option class='localidad'>Localidad</option>");
         }
     });
